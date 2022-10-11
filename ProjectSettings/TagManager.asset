@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - creature
+  - camera
+  - enemy
+  - Health
+  - Magic
+  - Level
+  - experiance
+  - name
+  - HeroIcon
+  - Avizon
+  - Beckend
+  - text
+  - bone
+  - crystal
+  - Image
+  - evolve
+  - center
+  - right
+  - left
+  - character
+  - freeSlot
+  - busySlot
+  - lvl1
+  - lvl2
+  - lvl3
+  - ground
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Item
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

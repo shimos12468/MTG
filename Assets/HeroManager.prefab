@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7848120370353983172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7848120370353983174}
+  - component: {fileID: 7848120370353983175}
+  - component: {fileID: 7848120370353983169}
+  m_Layer: 0
+  m_Name: HeroManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7848120370353983174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848120370353983172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 526.9067, y: 226.1097, z: -11.653227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7848120370353983175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848120370353983172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6e5fb353cbffc648a7ee2bb020a2a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroTypes:
+  - name: Rotgar
+    baseHealth: 180
+    healthMultiplier: 0.05
+    heroImage: {fileID: 21300000, guid: 3a7a151018a258c4d8df838ddcb020c2, type: 3}
+    rarity: 3
+    type: 1
+    heroIcon: {fileID: 21300000, guid: a979432ee5ac5eb48a5284bfa48c36b4, type: 3}
+  - name: Redmane
+    baseHealth: 160
+    healthMultiplier: 0.05
+    heroImage: {fileID: 21300000, guid: c4e5013c7020b1a44887f57837612e48, type: 3}
+    rarity: 2
+    type: 1
+    heroIcon: {fileID: 21300000, guid: 79d37b4d50d8b5240b8067ff9900dcd4, type: 3}
+  - name: scarab
+    baseHealth: 120
+    healthMultiplier: 0.05
+    heroImage: {fileID: 21300000, guid: 75a67474cf1989b4c9e1ad7ddec33177, type: 3}
+    rarity: 1
+    type: 1
+    heroIcon: {fileID: 21300000, guid: 84a2c3ec0bc819049a1c566a9f579834, type: 3}
+  - name: Skeleton mage
+    baseHealth: 100
+    healthMultiplier: 0.05
+    heroImage: {fileID: 21300000, guid: 4aa6c16c683d988428a0fe9ed25a2a00, type: 3}
+    rarity: 0
+    type: 2
+    heroIcon: {fileID: 0}
+  - name: King Warrior
+    baseHealth: 150
+    healthMultiplier: 0.05
+    heroImage: {fileID: 21300000, guid: f58411658672dc74ca417646c40fe177, type: 3}
+    rarity: 1
+    type: 1
+    heroIcon: {fileID: 0}
+  testname: Rotgar
+  heroButtonPrefab: {fileID: 8186892645958400360, guid: d32fa5a95d4c82342a251965c1bebcea, type: 3}
+  heroContainer: {fileID: 0}
+--- !u!114 &7848120370353983169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848120370353983172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf68ab042411dc24a97c58230c5ca62f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroNameUI: {fileID: 0}
+  healthTextUI: {fileID: 0}
+  heroImageUI: {fileID: 0}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30920a58c11dfc14ba481ee06df940e1, type: 3}
+  m_Name: Beckend
+  m_EditorClassIdentifier: 
+  description: Dark Creature that lives underwater often seen at night
+  name: Beckend
+  heroIcon: {fileID: 21300000, guid: 1935393caa1bb264685f775d5b89a35e, type: 3}
+  "Da\xF1o": 15
+  Defensa: 10
+  Velocidad: 15
+  Nivel: 1
+  Expactual: 0
+  Exprequerida: 0
+  PorcentajeCritico: 0
+  PorcentajeBloqueo: 0
+  baseHealth: 15
+  healthMultiplier: 0.2
+  Fuerza: 0
+  Destreza: 0
+  Inteligencia: 0
+  PuntosDisponibles: 0
