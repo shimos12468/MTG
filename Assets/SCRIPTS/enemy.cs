@@ -10,13 +10,7 @@ public class enemy : MonoBehaviour
     public GameObject player;
     public GameObject creature = null;
     public GameObject [] items = new GameObject[2];
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    
     void Update()
     {
       
@@ -31,24 +25,24 @@ public class enemy : MonoBehaviour
         }
 
 
-    public void TakeDamage(float damage ,GameObject parent)
-    {
-        health -= damage;
-        if (health <= 0)
-        {
+    //public void TakeDamage(float damage ,GameObject parent)
+    //{
+    //    health -= damage;
+    //    if (health <= 0)
+    //    {
             
-                int num= Random.Range(0,items.Length);
+    //            int num= Random.Range(0,items.Length);
                 
-                GameObject itmm= Instantiate(items[num], gameObject.transform);
-                itmm.transform.parent = null;
+    //            GameObject itmm= Instantiate(items[num], gameObject.transform);
+    //            itmm.transform.parent = null;
                
-                itmm.transform.position =transform.position;
+    //            itmm.transform.position =transform.position;
                 
 
-                parent.GetComponent<queenflora>().Expactual += 5;
-                parent.GetComponent<queenflora>().setUI();
+    //            parent.GetComponent<queenflora>().Expactual += 5;
+    //            parent.GetComponent<queenflora>().setUI();
 
-            Destroy(this.gameObject);
-        }
-    }
+    //        Destroy(this.gameObject);
+    //    }
+    //}
 }

@@ -30,6 +30,8 @@ TagManager:
   - lvl2
   - lvl3
   - ground
+  - GameMenu
+  - PurchasedItemsList
   layers:
   - Default
   - TransparentFX

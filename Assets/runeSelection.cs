@@ -24,16 +24,7 @@ public class runeSelection : MonoBehaviour
 
     public void sendToPurchesdRune()
     {
-        if (rune.unlocked)
-        {
-            if (rune.level < 3)
-            {
-
-                rune.Upgrade();
-            }
-        }
-        else
-        {
-            rune.Unlock();        }
+        rune.Unlock();
+        
     }
 }

@@ -5,25 +5,24 @@ using UnityEngine.UI;
 
 public class SWIP_creatures : MonoBehaviour
 {
-    public List<GameObject> deactivate = new List<GameObject>();
-    public GameObject menu;
+    
+    public GameObject MainMenuUI;
     public bool state = false;
 
-   public  GameObject runes_obj;
-   public GameObject items_obj;
-
+    public  GameObject RunesUI;
+    public GameObject ItemsUI;
+    public GameObject itemPrefab;
     public List<GameObject> creatures = new List<GameObject>();
-    public Image img;
-    public List<Sprite> creaturesIMG = new List<Sprite>();
-    public GameObject characterOptions;
-    public GameObject creatureOptions;
-    public GameObject objectContaincreatures;
+    public Image ImageUI;
+    public List<Sprite> CreaturesIMG = new List<Sprite>();
+    public GameObject characterOptionsUI;
+    public GameObject creatureOptionsUI;
     public int index = 0;
+    public Transform purchasedItemList;
     // Start is called before the first frame update
     void Start()
     {
         
-        //Debug.Log(gamemenu.instance.dd);
     }
 
     // Update is called once per frame
@@ -33,13 +32,7 @@ public class SWIP_creatures : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
 
-           
-            foreach (GameObject obj in deactivate)
-            {
-                obj.SetActive(state);
-            }
-
-            menu.SetActive(!state);
+            MainMenuUI.SetActive(!state);
             state = !state;
         }
 
@@ -47,16 +40,15 @@ public class SWIP_creatures : MonoBehaviour
         if (creatures.Count > 0)
         {
 
-
-            if (creaturesIMG[index % creaturesIMG.Count].name.Contains("creature"))
+            if (CreaturesIMG[index % CreaturesIMG.Count].name.Contains("creature"))
             {
-                characterOptions.SetActive(false);
-                creatureOptions.SetActive(true);
+                characterOptionsUI.SetActive(false);
+                creatureOptionsUI.SetActive(true);
             }
             else
             {
-                characterOptions.SetActive(true);
-                creatureOptions.SetActive(false);
+                characterOptionsUI.SetActive(true);
+                creatureOptionsUI.SetActive(false);
             }
         }
     }
@@ -69,7 +61,7 @@ public class SWIP_creatures : MonoBehaviour
         if (creatures.Count > 0)
         { 
             index++;
-            img.sprite = creaturesIMG[index % creaturesIMG.Count];
+            ImageUI.sprite = CreaturesIMG[index % CreaturesIMG.Count];
         }
     }
 
@@ -80,31 +72,41 @@ public class SWIP_creatures : MonoBehaviour
         {
             index--;
             if (index < 0)
-                index = creaturesIMG.Count - 1;
-            img.sprite = creaturesIMG[index % creaturesIMG.Count];
+                index = CreaturesIMG.Count - 1;
+            ImageUI.sprite = CreaturesIMG[index % CreaturesIMG.Count];
         }
     }
-    public void Addcreature(GameObject creature)
-    {
-        creatures.Add(creature);
-
-        creaturesIMG.Add(creature.GetComponent<queenflora>().heroIcon);
-    }
-
-    public void getcreatureStats()
-    {
-       GameObject creature =  creatures[index % creatures.Count];
-        queenflora q =  creature.gameObject.GetComponent<queenflora>();
-        Debug.Log(q.name);
-        Debug.Log(q.Damage);
-
-    }
+   
 
     public void sendcreature(bool r)
     {
-        if(r)
-        runes_obj.GetComponent<CreatureStatsManager>().getcreatureforrunes(creatures[index%creatures.Count]);
-        else
-            items_obj.GetComponent<CreatureStatsManager>().getcreatureforitems(creatures[index % creatures.Count]);
+        if (r)
+        {
+
+            RunesUI.GetComponent<CreatureStatsManager>().getcreatureforrunes(creatures[index%creatures.Count]);
+        }
+       
     }
+
+
+    public GameObject CurrentCreature()
+    {
+        return creatures[index % creatures.Count];
+    }
+
+    public void SetPurchesedItems()
+    {
+        for (int i = 0; i < purchasedItemList.childCount; i++)
+        {
+            Destroy(purchasedItemList.GetChild(i));
+        }
+
+        for (int i = 0; i < creatures[index % creatures.Count].GetComponent<Stats>().items.Count; i++)
+        {
+            GameObject item = Instantiate(itemPrefab, purchasedItemList);
+            item.GetComponent<itemDetails>().SetItem(creatures[index % creatures.Count].GetComponent<Stats>().items[i]);
+        }
+
+    }
+
 }

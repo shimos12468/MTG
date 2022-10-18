@@ -15,47 +15,47 @@ public class fireBullet : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
-        fullMagic = transform.gameObject.GetComponent<queenflora>().Magic;
+    //void Start()
+    //{
+    //    fullMagic = transform.gameObject.GetComponent<queenflora>().Magic;
        
-        Damage = transform.gameObject.GetComponent<queenflora>().Damage;
+    //    Damage = transform.gameObject.GetComponent<queenflora>().Damage;
 
-    }
+    //}
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown("5")&&fullMagic>=Manacoast)
-        {
+    //// Update is called once per frame
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown("5")&&fullMagic>=Manacoast)
+    //    {
            
-            UsedSpell(PlayerSpells[0]);
+    //        UsedSpell(PlayerSpells[0]);
 
-            transform.gameObject.GetComponent<queenflora>().Magic -= Manacoast;
-            fullMagic -= Manacoast;
-            Debug.Log("wfefwefw");
-            //transform.gameObject.GetComponent<queenflora>().setUI();
+    //        transform.gameObject.GetComponent<queenflora>().Magic -= Manacoast;
+    //        fullMagic -= Manacoast;
+    //        Debug.Log("wfefwefw");
+    //        //transform.gameObject.GetComponent<queenflora>().setUI();
            
-        }
-        if (Input.GetKeyDown("4") && fullMagic >= HealthManacoast)
-        {
+    //    }
+    //    if (Input.GetKeyDown("4") && fullMagic >= HealthManacoast)
+    //    {
 
-            UsedSpell(PlayerSpells[1]);
+    //        UsedSpell(PlayerSpells[1]);
 
-            transform.gameObject.GetComponent<queenflora>().Magic -= HealthManacoast;
-            fullMagic -= HealthManacoast;
-            transform.gameObject.GetComponent<queenflora>().setUI();
+    //        transform.gameObject.GetComponent<queenflora>().Magic -= HealthManacoast;
+    //        fullMagic -= HealthManacoast;
+    //        transform.gameObject.GetComponent<queenflora>().setUI();
 
-        }
-    }
+    //    }
+    //}
 
-    void UsedSpell(Spell spellToUse)
-    {
-        int id = spellToUse.id;
+    //void UsedSpell(Spell spellToUse)
+    //{
+    //    int id = spellToUse.id;
 
 
-        Spell spell =Instantiate(spellToUse, rotationofspell.transform.position, rotationofspell.rotation);
-        spell.gameObject.GetComponent<Spell>().setparent(gameObject);
-        spell.gameObject.GetComponent<Spell>().damage = Damage;
-    }
+    //    Spell spell =Instantiate(spellToUse, rotationofspell.transform.position, rotationofspell.rotation);
+    //    spell.gameObject.GetComponent<Spell>().setparent(gameObject);
+    //    spell.gameObject.GetComponent<Spell>().damage = Damage;
+    //}
 }

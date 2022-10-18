@@ -22,11 +22,11 @@ public class creature_controlerV2 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.E))
         {
-            rb.AddRelativeForce(0, forcefactor, 0);
+            rb.AddRelativeForce(0, gameObject.GetComponent<Stats>().creatureStats[6].Stat*Time.deltaTime, 0);
         }
         if (Input.GetKey(KeyCode.Q))
         {
-            rb.AddRelativeForce(0, -forcefactor * 0.3f, 0);
+            rb.AddRelativeForce(0, -gameObject.GetComponent<Stats>().creatureStats[6].Stat * 0.1f* Time.deltaTime, 0);
         }
 
 
@@ -37,23 +37,23 @@ public class creature_controlerV2 : MonoBehaviour
        
         if (Input.GetKey(KeyCode.W))
         {
-            Move(forcefactor, "forword");
+            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "forword");
             
         }
         if (Input.GetKey(KeyCode.S))
         {
-            Move(forcefactor, "backword");
+            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "backword");
             
         }
 
         if (Input.GetKey(KeyCode.D))
         {
 
-            Move(forcefactor, "right");
+            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "right");
         }
         if (Input.GetKey(KeyCode.A))
         {
-            Move(forcefactor, "left");
+            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "left");
         }
 
 
@@ -77,14 +77,15 @@ public class creature_controlerV2 : MonoBehaviour
 
     public void Move(float force ,string direction)
     {
-        if(direction=="right")
-         rb.AddRelativeForce(forcefactor, 0, 0);
+        force =force*Time.deltaTime;
+        if (direction=="right")
+         rb.AddRelativeForce(force, 0, 0);
         if (direction=="left")
-         rb.AddRelativeForce(-forcefactor, 0, 0);
+         rb.AddRelativeForce(-force, 0, 0);
         if(direction == "forword")
-         rb.AddRelativeForce(0, 0, forcefactor);
+         rb.AddRelativeForce(0, 0, force);
         if(direction == "backword")
-         rb.AddRelativeForce(0, 0, -forcefactor); 
+         rb.AddRelativeForce(0, 0, -force); 
 
     }
     public void laserShoot()

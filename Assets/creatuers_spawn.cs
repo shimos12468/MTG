@@ -14,17 +14,6 @@ public class creatuers_spawn : MonoBehaviour
     GameObject CHARACTER;
     [SerializeField]
     GameObject switchingManager;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-
-
-   
-   
-    // Update is called once per frame
    
     public void spawncreature(int i)
     {

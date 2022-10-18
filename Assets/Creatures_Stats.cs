@@ -7,12 +7,15 @@ using UnityEngine.UI;
 public class Creatures_Stats : MonoBehaviour
 {
     public enum Raritys { Common, Uncommon, Rare, Epic, Legendary }
+    public Raritys raritys;
     public GameObject evolvecreature;
-    public enum Types { Fire, Dark, Light, Metal, Water, Nature, Wind, Poison, Melee, Bug, Rock ,Electric }
-    public string type1="";
+    public enum Types { Fire, Dark, Light, Metal, Water, Nature, Wind, Poison, Melee, Bug, Rock, Electric }
+    public Types Ftype;
+    public Types Stype;
+    public string type1 = "";
     public int baselavel = -1;
     public int evolutionlevel = -3;
-    public string type2="";
+    public string type2 = "";
     public string Rarity;
     public string description;
     public string name;
@@ -21,10 +24,18 @@ public class Creatures_Stats : MonoBehaviour
     public float Magic;
     public float baseMagic;
     public float Health;
+    public float speed =0;
+    public float crit =0;
+    public float stamina = 0;
+    public float regeneration = 0;
     public float Defensa = 2F;
     public float Velocidad = 5f;
     public float Expactual;
     public float Exprequerida;
+
+
+    public Dictionary<string, float> stats = new Dictionary<string, float>();
+
     [Range(0f, 100f)] public float PorcentajeCritico;
     [Range(0f, 100f)] public float PorcentajeBloqueo;
     public int baseHealth;

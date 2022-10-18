@@ -17,8 +17,8 @@ public class Runes_displaycreatureIcon : MonoBehaviour
         
     }
 
-    public void displayIcon(queenflora q)
+    public void displayIcon(Sprite q)
     {
-        transform.GetComponent<Image>().sprite = q.heroIcon;
+        transform.GetComponent<Image>().sprite = q;
     }
 }

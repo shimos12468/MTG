@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 31012269719841176}
   - component: {fileID: 31012269719841177}
   - component: {fileID: 31012269719841174}
-  - component: {fileID: 31012269719841180}
+  - component: {fileID: -7753117981496667194}
   m_Layer: 0
   m_Name: beckend
   m_TagString: Untagged
@@ -121,19 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8825f353be62c47916507f07d9b83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  rectile: {fileID: 0}
-  cam: {fileID: 0}
   lr: {fileID: 31012270416252137}
   aimpoint: {fileID: 31012269179741853}
-  turnInput: {x: 0, y: 0}
   rb: {fileID: 31012269719841179}
-  body: {fileID: 0}
-  sensitivity: 100
   forcefactor: 15
-  rotationLimitx: 12
-  rotationLimity: 10
-  rightRotationLimit: {x: 0, y: 0, z: 35}
 --- !u!54 &31012269719841179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -201,7 +192,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.65470505, y: 0.5142417, z: 1.721672}
   m_Center: {x: -0.080426216, y: -0.17802882, z: 0.78006935}
---- !u!114 &31012269719841180
+--- !u!114 &-7753117981496667194
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,41 +201,87 @@ MonoBehaviour:
   m_GameObject: {fileID: 31012269719841175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e5ada61c988d9e42a0b836dead26091, type: 3}
+  m_Script: {fileID: 11500000, guid: ad2ce542ff5b19f499fd3462242f01bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  evolvecreature: {fileID: 0}
-  type1: 
-  baselavel: -1
-  evolutionlevel: -3
-  type2: 
-  Rarity: 
-  description: 
-  name: 
-  heroIcon: {fileID: 0}
-  Damage: 5
-  Magic: 0
-  baseMagic: 0
-  Health: 0
-  Defensa: 2
-  Velocidad: 5
-  Expactual: 0
-  Exprequerida: 0
-  PorcentajeCritico: 0
-  PorcentajeBloqueo: 0
-  baseHealth: 0
-  healthMultiplier: 0
-  Fuerza: 0
-  Destreza: 0
-  Inteligencia: 0
-  PuntosDisponibles: 0
-  level: 0
-  health: {fileID: 0}
-  magic: {fileID: 0}
-  experiance: {fileID: 0}
-  Name: {fileID: 0}
-  LEVEL: {fileID: 0}
-  img: {fileID: 0}
+  creature:
+    name: Avizon
+    Icon: {fileID: 21300000, guid: 42f66fe575ee9ad4c8f92e60660162ff, type: 3}
+    experiance: 0
+    points: 10
+    ExperiancelimitForUpgrade: 10
+    level: 0
+    raritys: 0
+    Ftype: 0
+    Stype: 0
+    UpgradeCreature: {fileID: 0}
+  creatureStats:
+  - name: 0
+    Stat: 40
+    baseStat: 40
+  - name: 0
+    Stat: 10
+    baseStat: 10
+  - name: 0
+    Stat: 100
+    baseStat: 100
+  - name: 0
+    Stat: 20
+    baseStat: 20
+  - name: 0
+    Stat: 50
+    baseStat: 50
+  - name: 0
+    Stat: 0
+    baseStat: 0
+  - name: 0
+    Stat: 600
+    baseStat: 600
+  - name: 0
+    Stat: 0
+    baseStat: 0
+  runes:
+  - name: 0
+    Stat: 1
+    level: 0
+    price: 1
+    levelup: 190000002300000032000000
+  - name: 0
+    Stat: 0
+    level: 0
+    price: 2
+    levelup: 190000002300000032000000
+  - name: 0
+    Stat: 0
+    level: 0
+    price: 2
+    levelup: 190000002300000032000000
+  - name: 0
+    Stat: 0
+    level: 0
+    price: 4
+    levelup: 190000002300000032000000
+  - name: 0
+    Stat: 0
+    level: 0
+    price: 7
+    levelup: 190000002300000032000000
+  - name: 0
+    Stat: 0
+    level: 0
+    price: 4
+    levelup: 190000002300000032000000
+  - name: 0
+    Stat: 0
+    level: 0
+    price: 10
+    levelup: 190000002300000032000000
+  - name: 0
+    Stat: 0
+    level: 0
+    price: 3
+    levelup: 190000002300000032000000
+  items: []
 --- !u!1 &31012269787820501
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +345,13 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1.7794118, y: 1}
+    Iso: 200
+    ShutterSpeed: 0.005
+    Aperture: 16
+    BladeCount: 5
+    Curvature: {x: 2, y: 11}
+    BarrelClipping: 0.25
+    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -768,7 +812,14 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7794118, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
+    Iso: 200
+    ShutterSpeed: 0.005
+    Aperture: 16
+    BladeCount: 5
+    Curvature: {x: 2, y: 11}
+    BarrelClipping: 0.25
+    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

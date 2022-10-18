@@ -27,35 +27,35 @@ public class Spell : MonoBehaviour
 
 
     }
-    private void OnTriggerEnter(Collider other)
-    {
+    //private void OnTriggerEnter(Collider other)
+    //{
 
-        Debug.Log(other.gameObject.tag);
-        if (other.gameObject.tag != "creature" && other.gameObject.tag != "Player")
-        {
+    //    Debug.Log(other.gameObject.tag);
+    //    if (other.gameObject.tag != "creature" && other.gameObject.tag != "Player")
+    //    {
            
-            Destroy(this.gameObject);
-        }
+    //        Destroy(this.gameObject);
+    //    }
 
-        if (other.gameObject.tag == "enemy")
-        {
-            other.gameObject.GetComponent<enemy>().TakeDamage(damage ,Parent);
-        }
-    }
-    IEnumerator toleranceRoutine()
-    {
-        yield return new WaitForSeconds(tolerance);
-        GetComponent<Collider>().isTrigger = true;
+    //    if (other.gameObject.tag == "enemy")
+    //    {
+    //        other.gameObject.GetComponent<enemy>().TakeDamage(damage ,Parent);
+    //    }
+    //}
+    //IEnumerator toleranceRoutine()
+    //{
+    //    yield return new WaitForSeconds(tolerance);
+    //    GetComponent<Collider>().isTrigger = true;
         
-    }
+    //}
 
-    public void setparent(GameObject gameObject)
-    {
-        Parent = gameObject;
-    }
-    private void O(Collision collision)
-    {
+    //public void setparent(GameObject gameObject)
+    //{
+    //    Parent = gameObject;
+    //}
+    //private void O(Collision collision)
+    //{
         
        
-    }
+    //}
 }

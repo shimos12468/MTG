@@ -33,7 +33,7 @@ public class switchingManager : MonoBehaviour
                 }
                 creatures[i].SetActive(false);
 
-                creatures[index % creatures.Count].GetComponent<queenflora>().setUI();
+                //creatures[index % creatures.Count].GetComponent<queenflora>().setUI();
             }
            
 
@@ -57,7 +57,7 @@ public class switchingManager : MonoBehaviour
     {
         creatures.Add(creature);
 
-        Gamemenu.GetComponent<SWIP_creatures>().Addcreature(creature);
+        //Gamemenu.GetComponent<SWIP_creatures>().Addcreature(creature);
         Debug.Log(creature.name);
     }
 }
