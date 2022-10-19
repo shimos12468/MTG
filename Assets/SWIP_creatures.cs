@@ -52,7 +52,11 @@ public class SWIP_creatures : MonoBehaviour
             }
         }
     }
-
+    public void Addcreature(GameObject creature)
+    {
+        creatures.Add(creature);
+        CreaturesIMG.Add(creature.GetComponent<Stats>().creature.Icon);
+    }
 
     
     public void swipe_right()

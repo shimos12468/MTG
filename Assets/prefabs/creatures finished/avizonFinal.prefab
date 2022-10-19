@@ -1527,9 +1527,7 @@ GameObject:
   - component: {fileID: 3903929203735794259}
   - component: {fileID: 3903929203735794260}
   - component: {fileID: 3903929203735794261}
-  - component: {fileID: 3903929203735794263}
   - component: {fileID: 3903929203735794264}
-  - component: {fileID: -8319056855312323020}
   - component: {fileID: 2394210754817965705}
   m_Layer: 0
   m_Name: avizonFinal
@@ -1630,28 +1628,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.2355839, z: 3.3184536}
   m_Center: {x: 0.0000049850623, y: 0.11779137, z: -1.1592265}
---- !u!114 &3903929203735794263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6353777382584910479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 006253dc583c8494281a58bfdddc6a9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castPoint: {fileID: 6119352907948226608}
-  AllSpells: []
-  PlayerSpells:
-  - {fileID: 4598796675145145540, guid: 06cd7cc7e7ce8a44498caa36f3e1dbf7, type: 3}
-  - {fileID: 1989727983848829905, guid: 5611d36819a49ef419d0a000b4f6627e, type: 3}
-  fullMagic: 0
-  Damage: 0
-  rotationofspell: {fileID: 5113138943657946283}
-  Manacoast: 10
-  HealthManacoast: 20
 --- !u!114 &3903929203735794264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,45 +1645,6 @@ MonoBehaviour:
   aimReticle: {fileID: 5113138944238935912}
   follow2: {fileID: 5113138942678694494}
   follow1: {fileID: 5113138942538303277}
---- !u!114 &-8319056855312323020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6353777382584910479}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b913c32fa5fea354c9d532c149241cf6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  runesUI: {fileID: 0}
-  points: 0
-  runesTree:
-  - name: mana
-    level: 0
-    stat: 0
-  - name: damage
-    level: 0
-    stat: 0
-  - name: defence
-    level: 0
-    stat: 0
-  - name: crit
-    level: 0
-    stat: 0
-  - name: stamina
-    level: 0
-    stat: 0
-  - name: health
-    level: 0
-    stat: 0
-  - name: speed
-    level: 0
-    stat: 0
-  - name: regeneration
-    level: 0
-    stat: 0
 --- !u!114 &2394210754817965705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1722,6 +1659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creature:
     name: Avizon
+    Points: 10
+    coins: 100
     Icon: {fileID: 21300000, guid: 42f66fe575ee9ad4c8f92e60660162ff, type: 3}
     experiance: 0
     points: 10
@@ -1798,6 +1737,12 @@ MonoBehaviour:
     price: 3
     levelup: 190000002300000032000000
   items: []
+  castPoint: {fileID: 6119352907948226608}
+  rotationofspell: {fileID: 5113138943657946283}
+  AllSpells: []
+  PlayerSpells:
+  - {fileID: 4598796675145145540, guid: 06cd7cc7e7ce8a44498caa36f3e1dbf7, type: 3}
+  - {fileID: 762962421651276139, guid: 783e8efb8a607184abc3c25a6621cf43, type: 3}
 --- !u!1 &6744609893864228652
 GameObject:
   m_ObjectHideFlags: 0

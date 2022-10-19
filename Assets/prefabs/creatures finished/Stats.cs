@@ -31,9 +31,10 @@ public struct rune
 public struct creature
 {
     public string name;
+    public int Points;
+    public int coins;
     public Sprite Icon;
     public float experiance;
-    public int points;
     public float ExperiancelimitForUpgrade;
     public int level;
     public Raritys raritys;
@@ -51,14 +52,25 @@ public class Stats : MonoBehaviour
     public List<stat> creatureStats= new List<stat>();
     public List<rune> runes= new List<rune>();
     public List<item> items = new List<item>();
+    float manacoast = 10;
+    float Hmanacoast = 10;
+    TMP_Text health;
+    TMP_Text magic;
+    TMP_Text experiance;
+    TMP_Text Name;
+    TMP_Text LEVEL;
+    Image img;
 
-     TMP_Text health;
-     TMP_Text magic;
-     TMP_Text experiance;
-     TMP_Text Name;
-     TMP_Text LEVEL;
-     Image img;
 
+    [SerializeField] private Transform castPoint;
+    public Transform rotationofspell;
+    public Spell[] AllSpells;
+    public Spell[] PlayerSpells;
+   
+
+
+
+   
     
     public Dictionary<string, float[]> StatsDictionary = new Dictionary<string, float[]>();
 
@@ -77,11 +89,50 @@ public class Stats : MonoBehaviour
            float[] m = new float[2]{ creatureStats[i].Stat, creatureStats[i].baseStat };
            StatsDictionary.Add(creatureStats[i].name.ToString(),m);
         }
+       
 
         setUI();
     }
 
-    
+
+    private void Update()
+    {
+        if (Input.GetKeyDown("5") && creatureStats[3].Stat >= manacoast)
+        {
+
+            UsedSpell(PlayerSpells[0]);
+           
+            stat stat = new stat();
+            stat = creatureStats[0];
+            stat.Stat -= manacoast;
+            creatureStats[0] = stat;
+            setUI();
+
+        }
+
+        if (Input.GetKeyDown("4") && creatureStats[3].Stat >= Hmanacoast)
+        {
+
+            UsedSpell(PlayerSpells[1]);
+           
+            stat stat = new stat();
+            stat = creatureStats[3];
+            stat.Stat -= Hmanacoast;
+            creatureStats[3] = stat;
+
+
+            setUI();
+
+        }
+    }
+
+
+    void UsedSpell(Spell spellToUse)
+    {
+       
+        Spell spell = Instantiate(spellToUse, rotationofspell.transform.position, rotationofspell.rotation);
+        spell.gameObject.GetComponent<Spell>().SendInfo(gameObject , creatureStats[6].Stat);
+    }
 
     public void updateScript(rune rune)
     {
@@ -109,10 +160,62 @@ public class Stats : MonoBehaviour
 
             }
         }
+        setUI();
+    }
 
 
+    public void UpdateStats(item newItem ,char c)
+    {
+
+        if (c == 'A')
+        {
+        Debug.Log("updating stats...");
+        for(int i = 0; i < creatureStats.Count; i++)
+        {
+            for(int j = 0; j < newItem.stats.Count; j++)
+            {
+                if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
+                {
+                    stat stat2 = new stat();
+                    stat2 = creatureStats[i];
+                    stat2.Stat += newItem.stats[j].stat;
+                    stat2.baseStat += newItem.stats[j].stat;
+                    creatureStats[i] = stat2;
+
+                    Debug.Log("found A stat NICE");
+                }
+            }
+        }
 
 
+        }
+
+
+        if (c == 'R')
+        {
+            Debug.Log("updating stats...");
+            for (int i = 0; i < creatureStats.Count; i++)
+            {
+                for (int j = 0; j < newItem.stats.Count; j++)
+                {
+                    if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
+                    {
+                        stat stat2 = new stat();
+                        stat2 = creatureStats[i];
+                        stat2.Stat -= newItem.stats[j].stat;
+                        if (stat2.Stat < 0) stat2.Stat = 0;
+                        stat2.baseStat -= newItem.stats[j].stat;
+                        creatureStats[i] = stat2;
+
+                        Debug.Log("found A stat NICE");
+                    }
+                }
+            }
+
+
+        }
+
+        setUI();
     }
 
     public void setUI()

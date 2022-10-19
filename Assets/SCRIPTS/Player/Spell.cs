@@ -7,15 +7,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Spell : MonoBehaviour
 {
-    //public SpellSO spell1;
-    private SphereCollider mycollider;
-    private Rigidbody myrigidbody;
+    
+    
     public Texture icon;
-    public string name;
-    public string description;
-    public int id;
     public float speed;
-    public float tolerance;
     public float damage  = 0;
     public GameObject Parent;
    
@@ -27,35 +22,27 @@ public class Spell : MonoBehaviour
 
 
     }
-    //private void OnTriggerEnter(Collider other)
-    //{
+    private void OnTriggerEnter(Collider other)
+    {
 
-    //    Debug.Log(other.gameObject.tag);
-    //    if (other.gameObject.tag != "creature" && other.gameObject.tag != "Player")
-    //    {
-           
-    //        Destroy(this.gameObject);
-    //    }
+        Debug.Log(other.gameObject.tag);
+        if (other.gameObject.tag != "creature" && other.gameObject.tag != "Player")
+        {
 
-    //    if (other.gameObject.tag == "enemy")
-    //    {
-    //        other.gameObject.GetComponent<enemy>().TakeDamage(damage ,Parent);
-    //    }
-    //}
-    //IEnumerator toleranceRoutine()
-    //{
-    //    yield return new WaitForSeconds(tolerance);
-    //    GetComponent<Collider>().isTrigger = true;
-        
-    //}
+            Destroy(this.gameObject);
+        }
 
-    //public void setparent(GameObject gameObject)
-    //{
-    //    Parent = gameObject;
-    //}
-    //private void O(Collision collision)
-    //{
-        
-       
-    //}
+        //if (other.gameObject.tag == "enemy")
+        //{
+        //    other.gameObject.GetComponent<enemy>().TakeDamage(damage, Parent);
+        //}
+    }
+    
+
+    public void SendInfo(GameObject gameObject ,float damage)
+    {
+        Parent = gameObject;
+        this.damage = damage;
+    }
+    
 }

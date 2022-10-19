@@ -32,9 +32,17 @@ public class itemDetails : MonoBehaviour
         CurrentCreature();
         if (currentCreature != null)
         {
-            currentCreature.GetComponent<Stats>().items.Add(thisitem);
-            GameObject a = Instantiate(itemPrefab, purcheseditemList.transform);
-            a.GetComponent<itemDetails>().SetItem(thisitem);
+            if (currentCreature.GetComponent<Stats>().creature.coins >= thisitem.price)
+            {
+                currentCreature.GetComponent<Stats>().creature.coins -= thisitem.price;
+                thisitem.ownership = true;
+                currentCreature.GetComponent<Stats>().items.Add(thisitem);
+                
+                GameObject a = Instantiate(itemPrefab, purcheseditemList.transform);
+                a.GetComponent<itemDetails>().SetItem(thisitem);
+                thisitem.ownership = false;
+                currentCreature.GetComponent<Stats>().UpdateStats(thisitem ,'A');
+            }
         }
     }
 
@@ -50,13 +58,33 @@ public class itemDetails : MonoBehaviour
         itemDiscription.text = item.Discription;
         itemName.text = item.name;
         itemIcon.sprite = item.Icon;
-        for (int i = 0; i < item.stats.Count; i++)
-        {
-            GameObject stat = Instantiate(statAsset, contentList);
-            stat.transform.GetChild(0).GetComponent<TMP_Text>().text = item.stats[i].stat + "     " + item.stats[i].name;
-        }
+       
+            for (int i = 0; i < item.stats.Count; i++)
+            {
+                GameObject stat = Instantiate(statAsset, contentList);
+                stat.transform.GetChild(0).GetComponent<TMP_Text>().text = item.stats[i].stat + "     " + item.stats[i].name;
+            }
+        
+        
     }
 
+
+    public void RemoveItem()
+    {
+        CurrentCreature();
+       for(int i = 0; i < currentCreature.GetComponent<Stats>().items.Count; i++)
+        {
+            if(thisitem.name== currentCreature.GetComponent<Stats>().items[i].name)
+            {
+                currentCreature.GetComponent<Stats>().items.RemoveAt(i);
+              
+                
+                currentCreature.GetComponent<Stats>().UpdateStats(thisitem ,'R');
+                Destroy(this.gameObject);
+                break;
+            }
+        }
+    }
 
     public void SetItem(item item ,itemDetails itemAsset)
     {
@@ -66,11 +94,11 @@ public class itemDetails : MonoBehaviour
         itemAsset.itemName.text = item.name;
         itemAsset.itemIcon.sprite = item.Icon;
         
-        for (int i = 0; i < item.stats.Count; i++)
-        {
-            GameObject stat = Instantiate(itemAsset.statAsset, itemAsset.contentList);
-            stat.transform.GetChild(0).GetComponent<TMP_Text>().text = item.stats[i].stat + "     " + item.stats[i].name;
-        }
+        //for (int i = 0; i < item.stats.Count; i++)
+        //{
+        //    GameObject stat = Instantiate(itemAsset.statAsset, itemAsset.contentList);
+        //    stat.transform.GetChild(0).GetComponent<TMP_Text>().text = item.stats[i].stat + "     " + item.stats[i].name;
+        //}
     }
 
 

@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4306597995882809732}
         m_TargetAssemblyTypeName: itemDetails, Assembly-CSharp
-        m_MethodName: purchaseItem
+        m_MethodName: RemoveItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1056,7 +1056,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: add item
+  m_text: Remove item
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.75
+  m_fontSize: 33.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 8236683727017159959}
   - component: {fileID: 4306597995882809732}
   m_Layer: 5
-  m_Name: Item
+  m_Name: Item-purshased
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1352,8 +1352,7 @@ MonoBehaviour:
     Icon: {fileID: 0}
     Discription: 
     ownership: 0
-  itemPrefab: {fileID: 8236683727017159981, guid: e185ed0d8e8dec64db0cb446af343074,
-    type: 3}
+  itemPrefab: {fileID: 8236683727017159981}
   itemDiscription: {fileID: 8236683727408587726}
   statAsset: {fileID: 2496810099632981261, guid: f1abfdd118b7fcf43b6919a0b104f877,
     type: 3}

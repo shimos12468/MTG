@@ -57,7 +57,7 @@ public class switchingManager : MonoBehaviour
     {
         creatures.Add(creature);
 
-        //Gamemenu.GetComponent<SWIP_creatures>().Addcreature(creature);
-        Debug.Log(creature.name);
+        Gamemenu.GetComponent<SWIP_creatures>().Addcreature(creature);
+        
     }
 }

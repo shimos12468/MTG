@@ -80,7 +80,7 @@ public class character_controler : MonoBehaviour
             if (Input.GetMouseButtonDown(1) && creaturealreadyspawned == false)
             {
                 idle();
-                //Debug.Log("spawn");
+                
                 StartCoroutine(atacar());
 
 
