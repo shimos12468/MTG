@@ -548,7 +548,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -885,7 +885,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7785978, y: 1}
+    m_SensorSize: {x: 1, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -918,7 +918,7 @@ GameObject:
   - component: {fileID: 1488657793006105925}
   m_Layer: 0
   m_Name: QueenFlora
-  m_TagString: Untagged
+  m_TagString: creature
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1045,9 +1045,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creature:
     name: Avizon
+    Points: 0
+    coins: 0
     Icon: {fileID: 21300000, guid: 42f66fe575ee9ad4c8f92e60660162ff, type: 3}
     experiance: 0
-    points: 10
     ExperiancelimitForUpgrade: 10
     level: 0
     raritys: 0
@@ -1121,6 +1122,10 @@ MonoBehaviour:
     price: 3
     levelup: 190000002300000032000000
   items: []
+  castPoint: {fileID: 0}
+  rotationofspell: {fileID: 0}
+  AllSpells: []
+  PlayerSpells: []
 --- !u!1 &4238130320735885756
 GameObject:
   m_ObjectHideFlags: 0

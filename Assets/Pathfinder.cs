@@ -33,13 +33,16 @@ public class Pathfinder : MonoBehaviour
     
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        //player = GameObject.FindGameObjectWithTag("creature").transform;
         agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
+
         PlayerInSightRange = Physics.CheckSphere(transform.position,SightRange ,WhatIsplayer);
         PlayerInAttackRange = Physics.CheckSphere(transform.position, AttackRange, WhatIsplayer);
 
@@ -69,6 +72,7 @@ public class Pathfinder : MonoBehaviour
 
     private void SearchWalkPoint()
     {
+       
         float randomZ = UnityEngine.Random.Range(-WalkPointRange, WalkPointRange);
         float randomX = UnityEngine.Random.Range(-WalkPointRange, WalkPointRange);
         WalkPoint = new Vector3(transform.position.x+randomX, transform.position.y, transform.position.z+ randomZ);
@@ -81,6 +85,7 @@ public class Pathfinder : MonoBehaviour
 
     public void ChasePlayer()
     {
+        player = GameObject.FindGameObjectWithTag("creature").transform;
         anim.SetFloat("walk", 2f);
         agent.SetDestination(player.position);
         Vector3 distanceToWalkPoint = transform.position - player.position;
@@ -93,6 +98,7 @@ public class Pathfinder : MonoBehaviour
     }
     public void AttackPlayer()
     {
+        player = GameObject.FindGameObjectWithTag("creature").transform;
         //agent.SetDestination(transform.position);
         anim.SetFloat("walk", 0.01f);
         transform.LookAt(player);
@@ -122,4 +128,12 @@ public class Pathfinder : MonoBehaviour
         fire.SetActive(false);
         Debug.Log("NotActive");
     }
+
+    public void  TakeDamage(float Damage)
+    {
+        enemyStats.Health -= Damage;
+        if (enemyStats.Health <= 0)
+            Destroy(this.gameObject);
+    }
+
 }
