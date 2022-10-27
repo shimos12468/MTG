@@ -229,4 +229,18 @@ public class Stats : MonoBehaviour
         Name.SetText(creature.name.ToString());
         experiance.SetText(creature.experiance.ToString() + " / " + creature.ExperiancelimitForUpgrade);
     }
+
+    public void TakeDamage(float Damage)
+    {
+
+        stat stat2 = new stat();
+        stat2 = creatureStats[0];
+        stat2.Stat -= Damage;
+        creatureStats[0]= stat2;
+        if (stat2.Stat <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
 }

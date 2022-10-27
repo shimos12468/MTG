@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using System;
+using TMPro;
 
 public class PrintHero : MonoBehaviour
 {
+
     public TextMeshProUGUI heroNameUI;
     public TextMeshProUGUI healthTextUI;
     public Image heroImageUI;
