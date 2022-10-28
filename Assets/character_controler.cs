@@ -11,7 +11,7 @@ public class character_controler : MonoBehaviour
     public CharacterController controler;
     public Transform cam;
      
-    private Animator anim;
+    public Animator anim;
     Vector3 velocity;
     public float turnSmoothTime = 0.1f;
     public TMP_Text selectionText;
@@ -38,7 +38,7 @@ public class character_controler : MonoBehaviour
     void Start()
     {
         isFoucsed = true;
-        anim = GetComponentInChildren<Animator>();
+
     }
 
     // Update is called once per frame

@@ -1374,8 +1374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creature:
     name: FlowerFlay
-    Points: 10
-    coins: 10
+    Points: 100
+    coins: 100
     Icon: {fileID: 21300000, guid: 08b512fd25c606b4caa9ba113093d1ca, type: 3}
     experiance: 0
     ExperiancelimitForUpgrade: 10
@@ -1416,37 +1416,37 @@ MonoBehaviour:
     level: 0
     price: 1
     levelup: 190000002300000032000000
-  - name: 0
+  - name: 1
     Stat: 0
     level: 0
     price: 2
     levelup: 190000002300000032000000
-  - name: 0
+  - name: 2
     Stat: 0
     level: 0
     price: 2
     levelup: 190000002300000032000000
-  - name: 0
+  - name: 3
     Stat: 0
     level: 0
     price: 4
     levelup: 190000002300000032000000
-  - name: 0
+  - name: 4
     Stat: 0
     level: 0
     price: 7
     levelup: 190000002300000032000000
-  - name: 0
+  - name: 5
     Stat: 0
     level: 0
     price: 4
     levelup: 190000002300000032000000
-  - name: 0
+  - name: 6
     Stat: 0
     level: 0
     price: 10
     levelup: 190000002300000032000000
-  - name: 0
+  - name: 7
     Stat: 0
     level: 0
     price: 3
