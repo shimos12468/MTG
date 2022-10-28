@@ -1689,11 +1689,11 @@ MonoBehaviour:
     Stat: 0
     baseStat: 0
   - name: 6
+    Stat: 10
+    baseStat: 10
+  - name: 7
     Stat: 600
     baseStat: 600
-  - name: 7
-    Stat: 0
-    baseStat: 0
   runes:
   - name: 0
     Stat: 1

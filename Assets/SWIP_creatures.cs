@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class SWIP_creatures : MonoBehaviour
 {
-    
+
+    public static SWIP_creatures Instance;
     public GameObject MainMenuUI;
     public bool state = false;
 
@@ -23,6 +24,18 @@ public class SWIP_creatures : MonoBehaviour
     void Start()
     {
         
+    }
+    private void Awake()
+    {
+        if (Instance==null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

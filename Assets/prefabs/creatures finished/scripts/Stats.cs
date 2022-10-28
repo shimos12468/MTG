@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -97,15 +98,28 @@ public class Stats : MonoBehaviour
 
     private void Update()
     {
+
+        if (creature.experiance >= creature.ExperiancelimitForUpgrade)
+        {
+            creature.level++;
+            creature.ExperiancelimitForUpgrade += 2;
+        }
+
+        if (creature.level >= 2)
+        {
+
+            EvolveCreature();
+        }
+
         if (Input.GetKeyDown("5") && creatureStats[3].Stat >= manacoast)
         {
 
             UsedSpell(PlayerSpells[0]);
            
             stat stat = new stat();
-            stat = creatureStats[0];
+            stat = creatureStats[3];
             stat.Stat -= manacoast;
-            creatureStats[0] = stat;
+            creatureStats[3] = stat;
             setUI();
 
         }
@@ -136,8 +150,8 @@ public class Stats : MonoBehaviour
 
     public void updateScript(rune rune)
     {
-       
 
+        
         for (int i = 0; i < runes.Count; i++)
         {
             if (rune.name == runes[i].name)
@@ -163,6 +177,38 @@ public class Stats : MonoBehaviour
         setUI();
     }
 
+    private void EvolveCreature()
+    {
+        Debug.Log("Evolving");
+        if (creature.UpgradeCreature != null)
+        {
+
+        Vector3 position = transform.position;
+        GameObject newcreature = Instantiate(creature.UpgradeCreature);
+        newcreature.GetComponent<Stats>().creatureStats = creatureStats;
+        newcreature.GetComponent<Stats>().runes = runes;
+        newcreature.GetComponent<Stats>().items = items;
+        newcreature.transform.parent = null;
+        newcreature.transform.position = position;
+
+        for(int i = 0; i < SWIP_creatures.Instance.creatures.Count; i++)
+            {
+                if (SWIP_creatures.Instance.creatures[i].GetComponent<Stats>().creature.name == creature.name)
+                {
+                    SWIP_creatures.Instance.creatures[i] = newcreature;
+                }
+           }
+
+            for (int i = 0; i < SWIP_creatures.Instance.CreaturesIMG.Count; i++)
+            {
+                if (SWIP_creatures.Instance.CreaturesIMG[i].name == creature.Icon.name)
+                {
+                    SWIP_creatures.Instance.CreaturesIMG[i] = newcreature.GetComponent<Stats>().creature.Icon;
+                }
+            }
+            Destroy(this.gameObject);
+        }
+    }
 
     public void UpdateStats(item newItem ,char c)
     {
@@ -224,7 +270,7 @@ public class Stats : MonoBehaviour
         
         img.sprite = creature.Icon;
         health.text = creatureStats[0].Stat + " / " + creatureStats[0].baseStat.ToString();
-        magic.SetText(creatureStats[2].Stat.ToString() + " / " + creatureStats[2].baseStat);
+        magic.SetText(creatureStats[3].Stat.ToString() + " / " + creatureStats[3].baseStat);
         LEVEL.SetText(creature.level.ToString());
         Name.SetText(creature.name.ToString());
         experiance.SetText(creature.experiance.ToString() + " / " + creature.ExperiancelimitForUpgrade);
@@ -239,6 +285,7 @@ public class Stats : MonoBehaviour
         creatureStats[0]= stat2;
         if (stat2.Stat <= 0)
         {
+            character_controler.Instance.isFoucsed = true;
             Destroy(this.gameObject);
         }
     }

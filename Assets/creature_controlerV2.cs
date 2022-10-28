@@ -22,11 +22,11 @@ public class creature_controlerV2 : MonoBehaviour
 
         if (Input.GetKey(KeyCode.E))
         {
-            rb.AddRelativeForce(0, gameObject.GetComponent<Stats>().creatureStats[6].Stat*Time.deltaTime, 0);
+            rb.AddRelativeForce(0, gameObject.GetComponent<Stats>().creatureStats[7].Stat*Time.deltaTime, 0);
         }
         if (Input.GetKey(KeyCode.Q))
         {
-            rb.AddRelativeForce(0, -gameObject.GetComponent<Stats>().creatureStats[6].Stat * 0.1f* Time.deltaTime, 0);
+            rb.AddRelativeForce(0, -gameObject.GetComponent<Stats>().creatureStats[7].Stat * 0.1f* Time.deltaTime, 0);
         }
 
 
@@ -37,23 +37,23 @@ public class creature_controlerV2 : MonoBehaviour
        
         if (Input.GetKey(KeyCode.W))
         {
-            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "forword");
+            Move(gameObject.GetComponent<Stats>().creatureStats[7].Stat, "forword");
             
         }
         if (Input.GetKey(KeyCode.S))
         {
-            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "backword");
+            Move(gameObject.GetComponent<Stats>().creatureStats[7].Stat, "backword");
             
         }
 
         if (Input.GetKey(KeyCode.D))
         {
 
-            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "right");
+            Move(gameObject.GetComponent<Stats>().creatureStats[7].Stat, "right");
         }
         if (Input.GetKey(KeyCode.A))
         {
-            Move(gameObject.GetComponent<Stats>().creatureStats[6].Stat, "left");
+            Move(gameObject.GetComponent<Stats>().creatureStats[7].Stat, "left");
         }
 
 

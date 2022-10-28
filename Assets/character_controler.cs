@@ -7,7 +7,7 @@ using TMPro;
 public class character_controler : MonoBehaviour
 {
 
-   
+    public static character_controler Instance;
     public CharacterController controler;
     public Transform cam;
      
@@ -18,11 +18,23 @@ public class character_controler : MonoBehaviour
     float turnsmoothvelocity;
     public float speed = 6f;
     public bool isFoucsed = true;
-    int creature_index = 0;
     float gravity = -9.81f;
     private bool creaturealreadyspawned = false;
-
+  
     // Start is called before the first frame update
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
         isFoucsed = true;
@@ -35,32 +47,7 @@ public class character_controler : MonoBehaviour
 
        
 
-        if (Input.GetAxis("Mouse ScrollWheel") ==0.1f)
-        {
-           
-           
-            selectionText.text = "flowerfly";
-            creature_index = 3;
-
-        }
-        if(Input.GetAxis("Mouse ScrollWheel") == -0.1f)
-        {
-            
-            selectionText.text = "Beckend";
-            creature_index = 1;
-        }
-        if (Input.GetAxis("Mouse ScrollWheel") < -0.1f)
-        {
-           
-            selectionText.text = "Queenflora";
-            creature_index = 2;
-        }
-        if (Input.GetAxis("Mouse ScrollWheel") > 0.1f)
-        {
-            
-            selectionText.text = "Avizon";
-            creature_index = 0;
-        }
+        
 
         if (isFoucsed)
         {
@@ -147,6 +134,9 @@ public class character_controler : MonoBehaviour
     private void SpawnCreature()
     {
        
-        transform.gameObject.GetComponent<creatuers_spawn>().spawncreature(creature_index);
+        transform.gameObject.GetComponent<creatuers_spawn>().spawncreature();
     }
+
+    
+
 }

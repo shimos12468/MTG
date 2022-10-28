@@ -32,10 +32,8 @@ public class Spell : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        //if (other.gameObject.tag == "enemy")
-        //{
-        //    other.gameObject.GetComponent<enemy>().TakeDamage(damage, Parent);
-        //}
+        Destroy(this.gameObject ,3);
+      
     }
     
 

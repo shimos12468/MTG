@@ -32,6 +32,7 @@ public class itemDetails : MonoBehaviour
         CurrentCreature();
         if (currentCreature != null)
         {
+            Debug.Log("dede");
             if (currentCreature.GetComponent<Stats>().creature.coins >= thisitem.price)
             {
                 currentCreature.GetComponent<Stats>().creature.coins -= thisitem.price;

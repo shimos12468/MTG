@@ -4988,8 +4988,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   icon: {fileID: 2800000, guid: d0ef1e04ee76cc741b0e36bc53bf0d7c, type: 3}
-  speed: 8
-  damage: 2
+  speed: 50
+  damage: 20
   Parent: {fileID: 0}
 --- !u!1001 &2858842593675223138
 PrefabInstance:
