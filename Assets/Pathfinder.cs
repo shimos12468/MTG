@@ -3,20 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
-
+using UnityEngine.UI;
 
 [System.Serializable]
 public class EnemyStats
 {
     public float Health;
+    public float baseHealth;
     public float Damage;
     public float Stamina;
+    public float exp;
+    public int coins;
+    public int points;
+
 }
 
 public class Pathfinder : MonoBehaviour
 {
     public NavMeshAgent agent;
+    public Slider slider;
     Transform player;
     public LayerMask WhatIsGround, WhatIsplayer;
     public Vector3 WalkPoint;
@@ -33,8 +38,8 @@ public class Pathfinder : MonoBehaviour
     
     void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("creature").transform;
-        agent = GetComponent<NavMeshAgent>();
+        
+       agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -129,11 +134,18 @@ public class Pathfinder : MonoBehaviour
         Debug.Log("NotActive");
     }
 
-    public void  TakeDamage(float Damage)
+    public void  TakeDamage(float Damage ,Stats stat)
     {
+       
         enemyStats.Health -= Damage;
+        //slider.value = enemyStats.Health;
         if (enemyStats.Health <= 0)
+        {
+
+
+            stat.TakeExp(enemyStats.exp, enemyStats.points, enemyStats.coins);
             Destroy(this.gameObject);
+        }
     }
 
 }

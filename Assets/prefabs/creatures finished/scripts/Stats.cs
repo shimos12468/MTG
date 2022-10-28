@@ -131,7 +131,7 @@ public class Stats : MonoBehaviour
     {
        
         Spell spell = Instantiate(spellToUse, rotationofspell.transform.position, rotationofspell.rotation);
-        spell.gameObject.GetComponent<Spell>().SendInfo(gameObject , creatureStats[6].Stat);
+        spell.gameObject.GetComponent<Spell>().SendInfo(this , creatureStats[6].Stat);
     }
 
     public void updateScript(rune rune)
@@ -243,4 +243,10 @@ public class Stats : MonoBehaviour
         }
     }
 
+    public void TakeExp(float exp ,int points ,int coins)
+    {
+        creature.experiance += exp;
+        creature.Points += points;
+        creature.coins += coins;
+    }
 }

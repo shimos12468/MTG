@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3206933079285281083}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaLeft1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208132415856038165}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaLeft3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6680975762380071855}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaRight1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1073373868682362764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaLeft4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933430939658878838}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FootLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400649564569648020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaRight4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1361659907108875681}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FootRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7656070060590897857}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaLeft2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5076160799680531434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaLeft2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5955497677858720568}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8499421443595057565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4238130318851481794}
   - component: {fileID: 4238130318851481795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -496,7 +496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4238130318964641297}
   - component: {fileID: 4238130318964641296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: movment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4238130319407415679}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AIMPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 4238130319447964959}
   - component: {fileID: 4238130319447964958}
   - component: {fileID: 4238130319447964957}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 4238130319549999599}
   - component: {fileID: 4238130319549999592}
   - component: {fileID: 4238130319549999598}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4238130319641947899}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ATTACKPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,7 +801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4238130319741313493}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CASTPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4238130320265960958}
   - component: {fileID: 4238130320265960957}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,8 +915,9 @@ GameObject:
   - component: {fileID: 4238130320336356786}
   - component: {fileID: 4238130320336356787}
   - component: {fileID: 4238130320336356796}
-  - component: {fileID: 1488657793006105925}
-  m_Layer: 0
+  - component: {fileID: -6213317800380088845}
+  - component: {fileID: -3397347260214537008}
+  m_Layer: 7
   m_Name: QueenFlora
   m_TagString: creature
   m_Icon: {fileID: 0}
@@ -1031,7 +1032,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.7555542, y: 3.7584906, z: 5.3741417}
   m_Center: {x: -0.013051987, y: 0.052966833, z: -1.330656}
---- !u!114 &1488657793006105925
+--- !u!114 &-6213317800380088845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1044,10 +1045,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creature:
-    name: Avizon
-    Points: 0
-    coins: 0
-    Icon: {fileID: 21300000, guid: 42f66fe575ee9ad4c8f92e60660162ff, type: 3}
+    name: QueenFlora
+    Points: 10
+    coins: 10
+    Icon: {fileID: 21300000, guid: 3af139622a6ed834994a788e194cc691, type: 3}
     experiance: 0
     ExperiancelimitForUpgrade: 10
     level: 0
@@ -1059,27 +1060,27 @@ MonoBehaviour:
   - name: 0
     Stat: 40
     baseStat: 40
-  - name: 0
+  - name: 1
     Stat: 10
     baseStat: 10
-  - name: 0
+  - name: 2
     Stat: 100
     baseStat: 100
-  - name: 0
+  - name: 3
     Stat: 20
     baseStat: 20
-  - name: 0
+  - name: 4
     Stat: 50
     baseStat: 50
-  - name: 0
+  - name: 5
     Stat: 0
     baseStat: 0
-  - name: 0
+  - name: 6
+    Stat: 10
+    baseStat: 10
+  - name: 7
     Stat: 600
     baseStat: 600
-  - name: 0
-    Stat: 0
-    baseStat: 0
   runes:
   - name: 0
     Stat: 1
@@ -1122,10 +1123,32 @@ MonoBehaviour:
     price: 3
     levelup: 190000002300000032000000
   items: []
-  castPoint: {fileID: 0}
-  rotationofspell: {fileID: 0}
+  castPoint: {fileID: 4238130319741313493}
+  rotationofspell: {fileID: 4238130320865577654}
   AllSpells: []
-  PlayerSpells: []
+  PlayerSpells:
+  - {fileID: 4598796675145145540, guid: 06cd7cc7e7ce8a44498caa36f3e1dbf7, type: 3}
+  - {fileID: 762962421651276139, guid: 783e8efb8a607184abc3c25a6621cf43, type: 3}
+--- !u!95 &-3397347260214537008
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238130320336356797}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3885e043fdc279e4e8a4b64ed07ab3d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4238130320735885756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4238130320735885747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FOLLOWPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1166,7 +1189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4238130320865577654}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: aimrotation (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5706402027622404470}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaRight3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,7 +1252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1218891229454955586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaRight5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1261,7 +1284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333044024206855039}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaLeft3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1227105781725621166}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArmRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1324,7 +1347,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 26982091283523800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaRight3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1356,7 +1379,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8986539080373030429}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FootRight_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1387,7 +1410,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3818244521571631462}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LegRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1419,7 +1442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 195863756307741331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1451,7 +1474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1114988072053002977}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaRight3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,7 +1505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6114739925063502648}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8385972200584249338}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1546,7 +1569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1997477251544833214}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandLeft_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1577,7 +1600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6852624688811745924}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BoneQueenFlora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1632,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758536377039119055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaRight5_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1640,7 +1663,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6970355979668588344}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FootLeft_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1671,7 +1694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6068937502054090432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArmLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1703,7 +1726,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5055531095640089993}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaRight1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1735,7 +1758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8204153241065693017}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LegLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1767,7 +1790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1613652799144140560}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandRight_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1821,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6182323980694630373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaRight2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1830,7 +1853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5628583651066080195}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaLeft1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1862,7 +1885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8530769626394348665}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaLeft5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1894,7 +1917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6000173395212225462}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaRight2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1926,7 +1949,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8394459374417595684}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AlaLeft3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1959,7 +1982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1698987459328821513}
   - component: {fileID: 411392483613798663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: QueenFlora
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2077,7 +2100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2013651935934641906}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2109,7 +2132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9063856753456357772}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AntenitaLeft5_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2140,7 +2163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1316041596435872517}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

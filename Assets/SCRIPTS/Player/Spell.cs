@@ -12,7 +12,7 @@ public class Spell : MonoBehaviour
     public Texture icon;
     public float speed;
     public float damage  = 0;
-    public GameObject Parent;
+    public Stats Parent;
    
 
     // Update is called once per frame
@@ -26,9 +26,9 @@ public class Spell : MonoBehaviour
     {
 
         Debug.Log(other.gameObject.tag);
-        if (other.gameObject.tag != "creature" && other.gameObject.tag != "Player")
+        if (other.gameObject.GetComponent<Pathfinder>())
         {
-
+            other.gameObject.GetComponent<Pathfinder>().TakeDamage(damage ,Parent);
             Destroy(this.gameObject);
         }
 
@@ -39,7 +39,7 @@ public class Spell : MonoBehaviour
     }
     
 
-    public void SendInfo(GameObject gameObject ,float damage)
+    public void SendInfo(Stats gameObject ,float damage)
     {
         Parent = gameObject;
         this.damage = damage;

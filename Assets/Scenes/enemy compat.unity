@@ -1403,6 +1403,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: monester
       objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813879, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5700231230677767947, guid: f586099897b6235468443dd4026662c2,
         type: 3}
       propertyPath: m_RootOrder

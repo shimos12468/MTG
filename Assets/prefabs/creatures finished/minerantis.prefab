@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6410796818309435123}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqMedio3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2793603175888115020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAdela3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9945772747780459}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqMedio3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3483502630366770166}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAtras3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6542615527192163140}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAdela1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467399097874704371}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqMedio1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5223541655678041824}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RootMinerantis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4385713573839074278}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAtras3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1175831712599034158}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cabeza_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8106698931154984793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoIzq3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1495656983812105294}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaIzq1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4388696971724276786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAtras1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7306667234309087380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAtras3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1849908818807059222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoDer3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5598667626285173118}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaIzq2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5872326701742919104}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoIzq3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,7 +522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8362972483677691342}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAtras2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,7 +554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607821574774449671}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerMedio3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -586,7 +586,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8362255145363394023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaDer3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6986200664258570331}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Columna4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2674213463648317749}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoIzq3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6034439738410743588}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerMedio2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -712,7 +712,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8618118973400669791}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Columna3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9086468910527413462}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Columna2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2725255463921967026}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaIzq3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,7 +809,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4474889233265651241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoIzq1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1187799554173628970}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaIzq3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +873,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5370980082952561252}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: minerantis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +906,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6892507537937535907}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAdela2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1609076183981047463}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAdela2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,7 +970,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8721110419044909494}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAdela3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1003,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8099468591151558947}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cuello
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1035,7 +1035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1713222698062036395}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAdela1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196811738489589907}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoIzq2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,7 +1099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7465717503357945325}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoDer3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1132,7 +1132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5549336961107094202}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CASTPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1166,7 +1166,7 @@ GameObject:
   - component: {fileID: 5549336961259577984}
   - component: {fileID: 5549336961259577991}
   - component: {fileID: 5549336961259577985}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,7 +1260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5549336961285072276}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ATTACKPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 5549336961359525488}
   - component: {fileID: 5549336961359525489}
   - component: {fileID: 5549336961359525490}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1360,7 +1360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5549336961385368080}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AIMPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1392,7 +1392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5549336962016920958}
   - component: {fileID: 5549336962016920959}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: movment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1470,7 +1470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5549336962096245677}
   - component: {fileID: 5549336962096245676}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1600,7 +1600,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5549336962240135641}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: aimrotation (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5549336962370097884}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FOLLOWPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1663,7 +1663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5549336962705806993}
   - component: {fileID: 5549336962705806994}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1746,7 +1746,7 @@ GameObject:
   - component: {fileID: 5549336962775879388}
   - component: {fileID: 5549336962775879379}
   - component: {fileID: -8103835778221789208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: minerantis
   m_TagString: creature
   m_Icon: {fileID: 0}
@@ -1964,7 +1964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1108599903824150699}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerMedio3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1998,7 +1998,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4819976534286207207}
   - component: {fileID: 2175336294732679243}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Modminerantis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2135,7 +2135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370928701861614015}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cabeza_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2166,7 +2166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 340689022595008622}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoDer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2198,7 +2198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4829417951056093624}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2230,7 +2230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5632503113810534818}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerMedio1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2262,7 +2262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7206442722035474559}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoDer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2294,7 +2294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8992559875659846475}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BrazoDer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2326,7 +2326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6163074267392325780}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqMedio3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2357,7 +2357,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3414669179112924434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAtras1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2389,7 +2389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4525856255527678396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaDer3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2422,7 +2422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3575614347725010173}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerMedio3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2453,7 +2453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6808713043045991692}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAtras3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2485,7 +2485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7121649073224315135}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaDer3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2517,7 +2517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8510725166692705815}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaDer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8209222222634972306}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqMedio2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2581,7 +2581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4740893759274261849}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Columna5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2615,7 +2615,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6090141525036128420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Columna1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2655,7 +2655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4782854277446974570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAdela3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2688,7 +2688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3927066271447545030}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAdela3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2720,7 +2720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105455968495029636}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaIzq3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2751,7 +2751,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7686169760137857360}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Central
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2783,7 +2783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7036262865246215148}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAdela3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2814,7 +2814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4550324443219885177}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAtras3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2847,7 +2847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4242387145955796247}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAtras3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2879,7 +2879,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8450752945810804405}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ColaDer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2911,7 +2911,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3606378789420320963}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaDerAdela3_end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2942,7 +2942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3306573644428569792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PiernaIzqAtras2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7101749484560097228}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2416420646968582436}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4077762349619319258}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: back_fin.B.Bk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6909937624180015921}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6615451960052475482}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.011_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3135387932833281131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: side_fin.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8124378815013186296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: side_fin.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3207484878569885053}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jaw.master_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1955256394686341224}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sharcadon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991143399523067173}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4644865455235096480}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: back_fin.T.002.Bk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8917680520948864058}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: back_fin.B.001.Bk_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3410299995174877965}
   - component: {fileID: 7527968703456363037}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1980359932236635427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: back_fin.T.001.Bk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7854297549673556521}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: back_fin.B.001.Bk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5841758177253955345}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -604,7 +604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065127106906232042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FOLLOWPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065127107044444143}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: aimrotation (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2065127107509915815}
   - component: {fileID: 2065127107509915812}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +719,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7788018, y: 1}
+    m_SensorSize: {x: 1, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 2065127107576285418}
   - component: {fileID: 2065127107576285413}
   - component: {fileID: -5535008285306465963}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: sharcadon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,9 +878,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creature:
     name: Avizon
+    Points: 0
+    coins: 0
     Icon: {fileID: 21300000, guid: 42f66fe575ee9ad4c8f92e60660162ff, type: 3}
     experiance: 0
-    points: 10
     ExperiancelimitForUpgrade: 10
     level: 0
     raritys: 0
@@ -954,6 +955,10 @@ MonoBehaviour:
     price: 3
     levelup: 190000002300000032000000
   items: []
+  castPoint: {fileID: 0}
+  rotationofspell: {fileID: 0}
+  AllSpells: []
+  PlayerSpells: []
 --- !u!1 &2065127107876119730
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +971,7 @@ GameObject:
   - component: {fileID: 2065127107876119734}
   - component: {fileID: 2065127107876119729}
   - component: {fileID: 2065127107876119735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +1065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065127107968197538}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ATTACKPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1091,7 +1096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065127108053904524}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CASTPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +1127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2065127108270410790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AIMPOINT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1155,7 +1160,7 @@ GameObject:
   - component: {fileID: 2065127108311085126}
   - component: {fileID: 2065127108311085127}
   - component: {fileID: 2065127108311085124}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2065127108776029595}
   - component: {fileID: 2065127108776029594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2065127108897145672}
   - component: {fileID: 2065127108897145673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: movment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1406,7 +1411,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -1431,7 +1436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3181726539842139468}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: side_fin.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1463,7 +1468,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2841030818813540127}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1495,7 +1500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7023124847078286373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jaw.master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1527,7 +1532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2458020703446171233}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: back_fin.T.002.Bk_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1558,7 +1563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1339183358306626262}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1618172176380336465}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: side_fin.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1621,7 +1626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1635181909290843644}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.014_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1652,7 +1657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7949551457648608463}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: side_fin.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1683,7 +1688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4406006839192193790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1716,7 +1721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7897043069476183167}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: metarig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1748,7 +1753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 280269245897869041}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: side_fin.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1780,7 +1785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4247527773665882939}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,7 +1819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5347710206116419776}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1846,7 +1851,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 701497947797955599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1878,7 +1883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1517100018555495143}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1910,7 +1915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2474575830134561673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1942,7 +1947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7660116764572047587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: back_fin.T.Bk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1974,7 +1979,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9148195438091431572}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2006,7 +2011,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8681294226964637042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spine.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
