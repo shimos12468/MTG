@@ -1067,8 +1067,8 @@ MonoBehaviour:
     Stat: 100
     baseStat: 100
   - name: 3
-    Stat: 20
-    baseStat: 20
+    Stat: 100
+    baseStat: 100
   - name: 4
     Stat: 50
     baseStat: 50
