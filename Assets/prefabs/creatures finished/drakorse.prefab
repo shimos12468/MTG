@@ -1258,7 +1258,6 @@ GameObject:
   - component: {fileID: 2477859614751021555}
   - component: {fileID: 2477859614751021556}
   - component: {fileID: 2477859614751021557}
-  - component: {fileID: 2477859614751021558}
   - component: {fileID: 2477859614751021559}
   - component: {fileID: 2477859614751021560}
   - component: {fileID: 5676774163774210379}
@@ -1325,27 +1324,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2477859614751021558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2477859614751021561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 006253dc583c8494281a58bfdddc6a9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castPoint: {fileID: 2477859613065428369}
-  AllSpells: []
-  PlayerSpells:
-  - {fileID: 4598796675145145540, guid: 06cd7cc7e7ce8a44498caa36f3e1dbf7, type: 3}
-  fullMagic: 0
-  Damage: 0
-  rotationofspell: {fileID: 2477859614221276914}
-  Manacoast: 10
-  HealthManacoast: 20
 --- !u!114 &2477859614751021559
 MonoBehaviour:
   m_ObjectHideFlags: 0
