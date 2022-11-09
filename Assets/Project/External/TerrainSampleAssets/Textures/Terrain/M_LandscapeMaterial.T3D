@@ -1,0 +1,186 @@
+Begin Object Class=/Script/Engine.Material Name="M_LandscapeMaterial"
+   Begin Object Class=/Script/Engine.MaterialExpressionBreakMaterialAttributes Name="MaterialExpressionBreakMaterialAttributes_0"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerCoords Name="MaterialExpressionLandscapeLayerCoords_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMakeMaterialAttributes Name="MaterialExpressionMakeMaterialAttributes_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMakeMaterialAttributes Name="MaterialExpressionMakeMaterialAttributes_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMakeMaterialAttributes Name="MaterialExpressionMakeMaterialAttributes_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMakeMaterialAttributes Name="MaterialExpressionMakeMaterialAttributes_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSampleParameter2D Name="MaterialExpressionTextureSampleParameter2D_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_5"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionBreakMaterialAttributes_0"
+      MaterialAttributes=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeMaterial:MaterialExpressionMaterialFunctionCall_2"')
+      MaterialExpressionEditorX=-208
+      MaterialExpressionEditorY=784
+      MaterialExpressionGuid=CD1BD0374CDD7E5BB58E1B9E6AFB3C22
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerCoords_0"
+      MappingScale=1024.000000
+      MaterialExpressionEditorX=-1008
+      MaterialExpressionEditorY=1184
+      MaterialExpressionGuid=215711FF46B6943DCE580C85B923B9E5
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionMakeMaterialAttributes_0"
+      BaseColor=(Expression=MaterialExpressionVectorParameter'"M_LandscapeMaterial:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-2112
+      MaterialExpressionEditorY=1104
+      MaterialExpressionGuid=E62E87D046C8AA8478CA31B8C4E40C0F
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionMakeMaterialAttributes_1"
+      BaseColor=(Expression=MaterialExpressionVectorParameter'"M_LandscapeMaterial:MaterialExpressionVectorParameter_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-2112
+      MaterialExpressionEditorY=1728
+      MaterialExpressionGuid=E62E87D046C8AA8478CA31B8C4E40C0F
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionMakeMaterialAttributes_3"
+      BaseColor=(Expression=MaterialExpressionVectorParameter'"M_LandscapeMaterial:MaterialExpressionVectorParameter_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-2128
+      MaterialExpressionEditorY=592
+      MaterialExpressionGuid=E62E87D046C8AA8478CA31B8C4E40C0F
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionMakeMaterialAttributes_4"
+      BaseColor=(Expression=MaterialExpressionVectorParameter'"M_LandscapeMaterial:MaterialExpressionVectorParameter_5"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-2160
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=E62E87D046C8AA8478CA31B8C4E40C0F
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.MatLayerBlend_Standard"'
+      FunctionInputs(0)=(ExpressionInputId=EFA63D0B46EF032837E8199E5B36B3E0,Input=(Expression=MaterialExpressionMakeMaterialAttributes'"M_LandscapeMaterial:MaterialExpressionMakeMaterialAttributes_0"',InputName="Base Material"))
+      FunctionInputs(1)=(ExpressionInputId=35B675B84041AED27688219B85171135,Input=(Expression=MaterialExpressionMakeMaterialAttributes'"M_LandscapeMaterial:MaterialExpressionMakeMaterialAttributes_1"',InputName="Top Material"))
+      FunctionInputs(2)=(ExpressionInputId=58AB44C64FD9086FC6AAB1B042B32C2E,Input=(Expression=MaterialExpressionTextureSampleParameter2D'"M_LandscapeMaterial:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=2,InputName="Alpha",Mask=1,MaskG=1))
+      FunctionOutputs(0)=(ExpressionOutputId=B7A48B68455CD8D9A45B3AAF57C5E97C,Output=(OutputName="Blended Material"))
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=768
+      MaterialExpressionGuid=76341600452E515BB405838D668FCD82
+      Material=Material'"M_LandscapeMaterial"'
+      Outputs(0)=(OutputName="Blended Material")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.MatLayerBlend_Standard"'
+      FunctionInputs(0)=(ExpressionInputId=EFA63D0B46EF032837E8199E5B36B3E0,Input=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeMaterial:MaterialExpressionMaterialFunctionCall_0"',InputName="Base Material"))
+      FunctionInputs(1)=(ExpressionInputId=35B675B84041AED27688219B85171135,Input=(Expression=MaterialExpressionMakeMaterialAttributes'"M_LandscapeMaterial:MaterialExpressionMakeMaterialAttributes_3"',InputName="Top Material"))
+      FunctionInputs(2)=(ExpressionInputId=58AB44C64FD9086FC6AAB1B042B32C2E,Input=(Expression=MaterialExpressionTextureSampleParameter2D'"M_LandscapeMaterial:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=1,InputName="Alpha",Mask=1,MaskR=1))
+      FunctionOutputs(0)=(ExpressionOutputId=B7A48B68455CD8D9A45B3AAF57C5E97C,Output=(OutputName="Blended Material"))
+      MaterialExpressionEditorX=-752
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=76341600452E515BB405838D668FCD82
+      Material=Material'"M_LandscapeMaterial"'
+      Outputs(0)=(OutputName="Blended Material")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_2"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.MatLayerBlend_Standard"'
+      FunctionInputs(0)=(ExpressionInputId=EFA63D0B46EF032837E8199E5B36B3E0,Input=(Expression=MaterialExpressionMaterialFunctionCall'"M_LandscapeMaterial:MaterialExpressionMaterialFunctionCall_1"',InputName="Base Material"))
+      FunctionInputs(1)=(ExpressionInputId=35B675B84041AED27688219B85171135,Input=(Expression=MaterialExpressionMakeMaterialAttributes'"M_LandscapeMaterial:MaterialExpressionMakeMaterialAttributes_4"',InputName="Top Material"))
+      FunctionInputs(2)=(ExpressionInputId=58AB44C64FD9086FC6AAB1B042B32C2E,Input=(Expression=MaterialExpressionTextureSampleParameter2D'"M_LandscapeMaterial:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=3,InputName="Alpha",Mask=1,MaskB=1))
+      FunctionOutputs(0)=(ExpressionOutputId=B7A48B68455CD8D9A45B3AAF57C5E97C,Output=(OutputName="Blended Material"))
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=176
+      MaterialExpressionGuid=76341600452E515BB405838D668FCD82
+      Material=Material'"M_LandscapeMaterial"'
+      Outputs(0)=(OutputName="Blended Material")
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameter2D_0"
+      ParameterName="Landscabe Mask"
+      ExpressionGUID=DC6E0EE94AFD5A2B80406D959AAF639F
+      Coordinates=(Expression=MaterialExpressionLandscapeLayerCoords'"M_LandscapeMaterial:MaterialExpressionLandscapeLayerCoords_0"')
+      Texture=Texture2D'"/Game/FantsyCastle/Textures/RGBMix.RGBMix"'
+      SamplerType=SAMPLERTYPE_Masks
+      MaterialExpressionEditorX=-752
+      MaterialExpressionEditorY=1168
+      MaterialExpressionGuid=E99784954395688662ED75864DF742AC
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=0.036458,G=0.028923,B=0.011448,A=0.000000)
+      ParameterName="Mountains"
+      ExpressionGUID=3DE6F93746E5108AEE54198E1FED9B6A
+      MaterialExpressionEditorX=-2608
+      MaterialExpressionEditorY=1152
+      MaterialExpressionGuid=F57B83A14E7D19FDC5BB8AAEA13CD3E1
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1"
+      DefaultValue=(R=0.145829,G=0.375000,B=0.115977,A=0.000000)
+      ParameterName="Grass"
+      ExpressionGUID=2ABBAA764E2D11481A014EB368D4D078
+      MaterialExpressionEditorX=-2576
+      MaterialExpressionEditorY=1648
+      MaterialExpressionGuid=F57B83A14E7D19FDC5BB8AAEA13CD3E1
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_4"
+      DefaultValue=(R=0.208333,G=0.181763,B=0.066858,A=0.000000)
+      ParameterName="ground"
+      ExpressionGUID=AA4A4EB14B8BE270631CE4BD0DB80819
+      MaterialExpressionEditorX=-2432
+      MaterialExpressionEditorY=656
+      MaterialExpressionGuid=BF69595C4799BC9BCC453B946174CA73
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_5"
+      DefaultValue=(R=0.718750,G=0.610274,B=0.336914,A=0.000000)
+      ParameterName="vvv"
+      ExpressionGUID=EB22A6DE4F143B2141B575AFFB13C985
+      MaterialExpressionEditorX=-2626
+      MaterialExpressionEditorY=79
+      MaterialExpressionGuid=36B09DA4439A1A02E006798EF543284C
+      Material=Material'"M_LandscapeMaterial"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EditorX=224
+   EditorY=336
+   Expressions(0)=MaterialExpressionTextureSampleParameter2D'"MaterialExpressionTextureSampleParameter2D_0"'
+   Expressions(1)=MaterialExpressionLandscapeLayerCoords'"MaterialExpressionLandscapeLayerCoords_0"'
+   Expressions(2)=MaterialExpressionMakeMaterialAttributes'"MaterialExpressionMakeMaterialAttributes_0"'
+   Expressions(3)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(4)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   Expressions(5)=MaterialExpressionMakeMaterialAttributes'"MaterialExpressionMakeMaterialAttributes_1"'
+   Expressions(6)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_1"'
+   Expressions(7)=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_0"'
+   Expressions(8)=MaterialExpressionMakeMaterialAttributes'"MaterialExpressionMakeMaterialAttributes_3"'
+   Expressions(9)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_4"'
+   Expressions(10)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   Expressions(11)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_2"'
+   Expressions(12)=MaterialExpressionMakeMaterialAttributes'"MaterialExpressionMakeMaterialAttributes_4"'
+   Expressions(13)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_5"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   ParameterGroupData(4)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=9A0DB78F4AE283F766338896CD5D33B6
+   ReferencedTextureGuids(0)=D8440A614F8FDB2FB17DC099A7D16945
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=ACC8764D457FCD34F7C535AAC52082ED
+End Object
