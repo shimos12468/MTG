@@ -101,14 +101,7 @@ public class SWIP_creatures : MonoBehaviour
     }
    
 
-    public void sendcreature(bool r)
-    {
-        if (r)
-        {
-            RunesUI.GetComponent<CreatureStatsManager>().getcreatureforrunes(creatures[index%creatures.Count]);
-        }
-       
-    }
+    
 
     public void SendPlayer()
     {
@@ -120,23 +113,6 @@ public class SWIP_creatures : MonoBehaviour
         return creatures[index % creatures.Count];
     }
 
-    public void SetPurchesedItems()
-    {
-        for (int i = 0; i < purchasedItemList.childCount; i++)
-        {
-            Destroy(purchasedItemList.GetChild(i));
-        }
-
-        if (creatures.Count > 0)
-        {
-            for (int i = 0; i < creatures[index % creatures.Count].GetComponent<Stats>().items.Count; i++)
-            {
-                GameObject item = Instantiate(itemPrefab, purchasedItemList);
-                item.GetComponent<itemDetails>().SetItem(creatures[index % creatures.Count].GetComponent<Stats>().items[i]);
-            }
-        }
-        
-
-    }
+   
 
 }

@@ -19,6 +19,26 @@ public struct stat
 
 
 [System.Serializable]
+public struct item
+{
+    public string name;
+    public List<itemStats> stats;
+    public int price;
+    public Sprite Icon;
+    public string Discription;
+    public bool ownership;
+}
+
+
+[System.Serializable]
+public struct itemStats
+{
+    public statType name;
+    public float stat;
+}
+
+
+[System.Serializable]
 public struct rune
 {
     public statType name;
@@ -62,16 +82,6 @@ public class Stats : MonoBehaviour
     TMP_Text LEVEL;
     Image img;
 
-
-    [SerializeField] private Transform castPoint;
-    public Transform rotationofspell;
-    public Spell[] AllSpells;
-    public Spell[] PlayerSpells;
-   
-
-
-
-   
     
     public Dictionary<string, float[]> StatsDictionary = new Dictionary<string, float[]>();
 
@@ -111,43 +121,11 @@ public class Stats : MonoBehaviour
             EvolveCreature();
         }
 
-        if (Input.GetKeyDown("5") && creatureStats[3].Stat >= manacoast)
-        {
-
-            UsedSpell(PlayerSpells[0]);
-           
-            stat stat = new stat();
-            stat = creatureStats[3];
-            stat.Stat -= manacoast;
-            creatureStats[3] = stat;
-            setUI();
-
-        }
-
-        if (Input.GetKeyDown("4") && creatureStats[3].Stat >= Hmanacoast)
-        {
-
-            UsedSpell(PlayerSpells[1]);
-           
-            stat stat = new stat();
-            stat = creatureStats[3];
-            stat.Stat -= Hmanacoast;
-            creatureStats[3] = stat;
-
-
-            setUI();
-
-        }
+      
     }
 
 
-    void UsedSpell(Spell spellToUse)
-    {
-       
-        Spell spell = Instantiate(spellToUse, rotationofspell.transform.position, rotationofspell.rotation);
-        spell.gameObject.GetComponent<Spell>().SendInfo(this , creatureStats[6].Stat);
-    }
-
+    
     public void updateScript(rune rune)
     {
 
@@ -276,19 +254,7 @@ public class Stats : MonoBehaviour
         experiance.SetText(creature.experiance.ToString() + " / " + creature.ExperiancelimitForUpgrade);
     }
 
-    public void TakeDamage(float Damage)
-    {
-
-        stat stat2 = new stat();
-        stat2 = creatureStats[0];
-        stat2.Stat -= Damage;
-        creatureStats[0]= stat2;
-        if (stat2.Stat <= 0)
-        {
-            character_controler.Instance.isFoucsed = true;
-            Destroy(this.gameObject);
-        }
-    }
+  
 
     public void TakeExp(float exp ,int points ,int coins)
     {

@@ -35,7 +35,7 @@ public class Spell : MonoBehaviour
         Destroy(this.gameObject ,3);
       
     }
-    
+      
 
     public void SendInfo(Stats gameObject ,float damage)
     {

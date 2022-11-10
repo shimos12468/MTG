@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -18,6 +19,16 @@ public class CreatureStatsManager : MonoBehaviour
     }
     public void getcreatureforitems(GameObject creature)
     {
+
+    }
+
+
+    public void sendcreature(bool r)
+    {
+        if (r)
+        {
+           getcreatureforrunes(SWIP_creatures.Instance.creatures[SWIP_creatures.Instance.index % SWIP_creatures.Instance.creatures.Count]);
+        }
 
     }
 }

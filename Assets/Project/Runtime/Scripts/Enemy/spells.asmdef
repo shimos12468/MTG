@@ -1,0 +1,16 @@
+{
+    "name": "spells",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a7b2f69bf02e25248afa4a394e3e9894"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

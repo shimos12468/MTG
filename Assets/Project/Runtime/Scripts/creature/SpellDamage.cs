@@ -8,14 +8,14 @@ public class SpellDamage : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.gameObject.name);
-        if (other.gameObject.GetComponent<Stats>())
-            other.gameObject.GetComponent<Stats>().TakeDamage(Damage);
+        if (other.gameObject.GetComponent<FireBullet>())
+            other.gameObject.GetComponent<FireBullet>().TakeDamage(Damage);
 
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.GetComponent<Stats>())
-        other.gameObject.GetComponent<Stats>().TakeDamage(Damage);
+        if(other.gameObject.GetComponent<FireBullet>())
+        other.gameObject.GetComponent<FireBullet>().TakeDamage(Damage);
     }
 }
