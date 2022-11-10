@@ -17,7 +17,7 @@ public struct stat
     public float baseStat;
 }
 
-
+ 
 [System.Serializable]
 public struct item
 {

@@ -4977,7 +4977,7 @@ GameObject:
   - component: {fileID: 5651566973986808943}
   - component: {fileID: 3417534251613410628}
   m_Layer: 0
-  m_Name: zorticiana guerrera
+  m_Name: female
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

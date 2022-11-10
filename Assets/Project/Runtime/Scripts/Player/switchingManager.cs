@@ -7,7 +7,9 @@ public class switchingManager : MonoBehaviour
     [SerializeField]
     GameObject player;
     [SerializeField]
-    GameObject playerperfab;
+    GameObject femaleperfab;
+    [SerializeField]
+    GameObject maleprefab;
     [SerializeField]
     GameObject Gamemenu;
     //GameObject playercam;
@@ -16,8 +18,19 @@ public class switchingManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = Instantiate(playerperfab);
-        player.GetComponent<creatuers_spawn>().switchingManager = this.gameObject;
+
+        if (PlayerPrefs.GetInt("Type")==1)
+        {
+            player = Instantiate(femaleperfab);
+            player.GetComponent<creatuers_spawn>().switchingManager = this.gameObject;
+        }
+
+        if (PlayerPrefs.GetInt("Type") == 0)
+        {
+            player = Instantiate(maleprefab);
+            player.GetComponent<creatuers_spawn>().switchingManager = this.gameObject;
+        }
+
     }
 
     // Update is called once per frame

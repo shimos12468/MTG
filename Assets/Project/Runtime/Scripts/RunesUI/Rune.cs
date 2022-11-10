@@ -15,6 +15,7 @@ public class Rune : MonoBehaviour
    public TMP_Text RuneName;
    public bool unlocked = false;
 
+     
    public GameObject creature;
    public List<int> percantage = new List<int>();
 

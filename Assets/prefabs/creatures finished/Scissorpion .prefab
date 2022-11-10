@@ -1987,6 +1987,7 @@ GameObject:
   - component: {fileID: 8346312712995413901}
   - component: {fileID: 8346312712995413890}
   - component: {fileID: 7782623334889178728}
+  - component: {fileID: 1435459276775926048}
   m_Layer: 7
   m_Name: 'Scissorpion '
   m_TagString: creature
@@ -2171,10 +2172,26 @@ MonoBehaviour:
     price: 3
     levelup: 190000002300000032000000
   items: []
+--- !u!114 &1435459276775926048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8346312712995413891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525fb0f7a5085104c86756d6965717fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manacoast: 10
+  Hmanacoast: 10
   castPoint: {fileID: 0}
   rotationofspell: {fileID: 0}
   AllSpells: []
-  PlayerSpells: []
+  PlayerSpells:
+  - {fileID: 4598796675145145540, guid: 4381fd59ba14d2f47bcf7a015f6a89cd, type: 3}
+  - {fileID: 762962421651276139, guid: 9d99338a2c02705449364e246000b954, type: 3}
 --- !u!1 &8346312713061713857
 GameObject:
   m_ObjectHideFlags: 0

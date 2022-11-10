@@ -2671,8 +2671,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407647964}
-  m_LocalRotation: {x: 0.179286, y: 0.2642198, z: -0.050057553, w: 0.94632906}
-  m_LocalPosition: {x: -3.1392436, y: -0.3599999, z: -5.1835074}
+  m_LocalRotation: {x: 0.07494312, y: -0.78904253, z: 0.15561251, w: 0.5895593}
+  m_LocalPosition: {x: 9.808682, y: 4.120098, z: 2.0736735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4066,7 +4066,7 @@ GameObject:
   - component: {fileID: 641097882}
   - component: {fileID: 641097881}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4136,8 +4136,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: creatuers_spawn, Assembly-CSharp
+      - m_Target: {fileID: 1388292371}
+        m_TargetAssemblyTypeName: SWIP_creatures, singltone
         m_MethodName: swipe_left
         m_Mode: 1
         m_Arguments:
@@ -8211,8 +8211,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  playerperfab: {fileID: 7700723014214379888, guid: 44126d56be7294d418c957c3cdf67694,
-    type: 3}
+  femaleperfab: {fileID: 0}
+  maleprefab: {fileID: 0}
   Gamemenu: {fileID: 1388292368}
   creatures: []
 --- !u!1 &1407619112 stripped
@@ -10370,7 +10370,7 @@ GameObject:
   - component: {fileID: 1780744549}
   - component: {fileID: 1780744548}
   m_Layer: 5
-  m_Name: Image
+  m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10440,8 +10440,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: creatuers_spawn, Assembly-CSharp
+      - m_Target: {fileID: 1388292371}
+        m_TargetAssemblyTypeName: SWIP_creatures, singltone
         m_MethodName: swipe_right
         m_Mode: 1
         m_Arguments:
@@ -14773,7 +14773,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918022461663593}
-  - component: {fileID: 3973376956469640450}
   m_Layer: 5
   m_Name: stats (9)
   m_TagString: Untagged
@@ -14947,7 +14946,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918022636985849}
-  - component: {fileID: 3973376956645181842}
   m_Layer: 5
   m_Name: stats (10)
   m_TagString: Untagged
@@ -15143,7 +15141,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918023026473666}
-  - component: {fileID: 3973376957043060390}
   m_Layer: 5
   m_Name: stats (16)
   m_TagString: Untagged
@@ -15295,7 +15292,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918023177045035}
-  - component: {fileID: 3973376957164048449}
   m_Layer: 5
   m_Name: stats (13)
   m_TagString: Untagged
@@ -15491,7 +15487,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918024093346474}
-  - component: {fileID: 3973376955928673998}
   m_Layer: 5
   m_Name: stats (14)
   m_TagString: Untagged
@@ -15530,7 +15525,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918024195101674}
-  - component: {fileID: 3973376956026455937}
   m_Layer: 5
   m_Name: stats (11)
   m_TagString: Untagged
@@ -16109,7 +16103,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918024519262042}
-  - component: {fileID: 3973376956358773553}
   m_Layer: 5
   m_Name: stats (12)
   m_TagString: Untagged
@@ -16148,7 +16141,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3082918024544921920}
-  - component: {fileID: 3973376956413803864}
   m_Layer: 5
   m_Name: stats (15)
   m_TagString: Untagged
@@ -18095,8 +18087,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1388292371}
-        m_TargetAssemblyTypeName: SWIP_creatures, Assembly-CSharp
+      - m_Target: {fileID: 3973376956664563608}
+        m_TargetAssemblyTypeName: CreatureStatsManager, runesUI
         m_MethodName: sendcreature
         m_Mode: 6
         m_Arguments:
@@ -18128,30 +18120,6 @@ RectTransform:
   m_AnchoredPosition: {x: 118, y: -170}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &3973376955928673998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918024093346475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3973376956026455937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918024195101675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3973376956033745284
 GameObject:
   m_ObjectHideFlags: 0
@@ -19488,42 +19456,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &3973376956358773553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918024519262043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3973376956413803864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918024544921921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3973376956469640450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918022461663592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &3973376956633550048
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19646,18 +19578,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3973376956645181842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918022636985848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3973376956664563558
 GameObject:
   m_ObjectHideFlags: 0
@@ -20512,30 +20432,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3973376957006481936}
   m_CullTransparentMesh: 1
---- !u!114 &3973376957043060390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918023026473667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3973376957164048449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082918023177045034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7b067d419ea9e45862d71126a9832c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!223 &3973376957170443752
 Canvas:
   m_ObjectHideFlags: 0

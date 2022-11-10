@@ -13,7 +13,6 @@ public class creatuers_spawn : MonoBehaviour
     GameObject CHARACTER;
     [SerializeField]
     public GameObject switchingManager;
-
     public int index;
     public TMP_Text text;
 
