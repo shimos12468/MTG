@@ -10,9 +10,10 @@ public class creature_controlerV2 : MonoBehaviour
     public GameObject aimpoint;
     public Rigidbody rb;
     public float forcefactor = 50;
+    public float RotationSpeed = 5;
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -29,6 +30,7 @@ public class creature_controlerV2 : MonoBehaviour
             rb.AddRelativeForce(0, -gameObject.GetComponent<Stats>().creatureStats[7].Stat * 0.1f* Time.deltaTime, 0);
         }
 
+        transform.Rotate((Input.GetAxis("Mouse Y") * RotationSpeed * Time.deltaTime), (Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime), 0, Space.World);
 
         laserShoot();
 
@@ -68,11 +70,11 @@ public class creature_controlerV2 : MonoBehaviour
         gameObject.transform.localRotation = new Quaternion(0, 0, 0, 0);
 
     }
-    //private void OnCollisionExit(Collision collision)
-    //{
-    //    //rb.constraints = RigidbodyConstraints.None;
 
-    //}
+    private void OnCollisionExit(Collision collision)
+    {
+        rb.constraints = RigidbodyConstraints.FreezeRotationZ;
+    }
 
 
     public void Move(float force ,string direction)
@@ -122,7 +124,7 @@ public class creature_controlerV2 : MonoBehaviour
         if (!Input.GetMouseButton(1))
         {
 
-            rb.constraints = RigidbodyConstraints.FreezeRotation;
+            rb.constraints = RigidbodyConstraints.FreezeRotationZ;
 
         }
 

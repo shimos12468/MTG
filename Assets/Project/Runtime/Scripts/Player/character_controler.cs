@@ -4,9 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Cinemachine;
+
 public class character_controler : MonoBehaviour
 {
 
+
+    public  CinemachineFreeLook freelookCam;
     public static character_controler Instance;
     public CharacterController controler;
     public Transform cam;
@@ -19,7 +23,7 @@ public class character_controler : MonoBehaviour
     float turnsmoothvelocity;
     public float speed = 6f;
     public bool isFoucsed = true;
-
+    
     public float jumpforce = 100;
     public float gravity = 10f;
     private bool creaturealreadyspawned = false;
@@ -27,6 +31,7 @@ public class character_controler : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        
         if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -67,10 +72,26 @@ public class character_controler : MonoBehaviour
 
 
             }
+            float mouseX = Input.mousePosition.x;
+            float mouseY = Input.mousePosition.y;
+            float screenX = Screen.width;
+            float screenY = Screen.height;
+
+            if (Input.GetMouseButton(0) && !(mouseX < 0||mouseX>screenX||mouseY<0||mouseY>screenY))
+            {
+                freelookCam.m_XAxis.m_MaxSpeed = 100;
+                
+            }
+            if (!Input.GetMouseButton(0))
+            {
+                freelookCam.m_XAxis.m_MaxSpeed = 0;
+                freelookCam.m_YAxis.m_MaxSpeed = 0;
+            }
 
 
             if (direction.magnitude >= 0.1f)
             {
+               
                 float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnsmoothvelocity, turnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);

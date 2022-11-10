@@ -1600,6 +1600,7 @@ MonoBehaviour:
   aimpoint: {fileID: 5113138943657946282}
   rb: {fileID: 3903929203735794260}
   forcefactor: 50
+  RotationSpeed: 5
 --- !u!54 &3903929203735794260
 Rigidbody:
   m_ObjectHideFlags: 0

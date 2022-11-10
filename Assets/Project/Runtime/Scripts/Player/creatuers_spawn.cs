@@ -5,7 +5,8 @@ using TMPro;
 public class creatuers_spawn : MonoBehaviour
 {
    
-   public List <GameObject>creatures = new List<GameObject>();
+    public List <GameObject>creatures = new List<GameObject>();
+
     [SerializeField]
     Transform spawner;
    
@@ -17,6 +18,7 @@ public class creatuers_spawn : MonoBehaviour
     public TMP_Text text;
 
 
+    
     
     public void spawncreature()
     {
@@ -48,5 +50,12 @@ public class creatuers_spawn : MonoBehaviour
             index--;
             text.text = creatures[index].GetComponent<Stats>().creature.name;
         }
+    }
+
+
+    public void AddPrefab(GameObject CreaturePrefab)
+    {
+        Debug.Log("Added");
+        creatures.Add(CreaturePrefab);
     }
 }
