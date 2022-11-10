@@ -471,6 +471,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyDrakos (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813873, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5311681479134385601, guid: f586099897b6235468443dd4026662c2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2168,6 +2173,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NavMeshSerfuce
       objectReference: {fileID: 0}
+    - target: {fileID: 1088996725430299252, guid: 3c75d93b7744cad4f9581726eb0c7313,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1088996725430299253, guid: 3c75d93b7744cad4f9581726eb0c7313,
         type: 3}
       propertyPath: m_NavMeshData
@@ -2671,8 +2681,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407647964}
-  m_LocalRotation: {x: 0.07494312, y: -0.78904253, z: 0.15561251, w: 0.5895593}
-  m_LocalPosition: {x: 9.808682, y: 4.120098, z: 2.0736735}
+  m_LocalRotation: {x: 0.11271353, y: -0.25846827, z: 0.03038027, w: 0.9589405}
+  m_LocalPosition: {x: 2.7751334, y: -1.6335868, z: -4.7739987}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7461,6 +7471,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyDrakos
       objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813878, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813879, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5506198402495484452, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5700231230677767947, guid: f586099897b6235468443dd4026662c2,
         type: 3}
       propertyPath: m_RootOrder
@@ -8211,8 +8236,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  femaleperfab: {fileID: 0}
-  maleprefab: {fileID: 0}
+  femaleperfab: {fileID: 7700723014214379888, guid: 44126d56be7294d418c957c3cdf67694,
+    type: 3}
+  maleprefab: {fileID: 7700723014214379888, guid: 44126d56be7294d418c957c3cdf67694,
+    type: 3}
   Gamemenu: {fileID: 1388292368}
   creatures: []
 --- !u!1 &1407619112 stripped
@@ -8317,6 +8344,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyDrakos (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813873, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5700231230677767947, guid: f586099897b6235468443dd4026662c2,
         type: 3}
@@ -8817,6 +8849,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyDrakos (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813873, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5700231230677767947, guid: f586099897b6235468443dd4026662c2,
         type: 3}
@@ -10000,6 +10037,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyDrakos (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813873, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5311681479134385601, guid: f586099897b6235468443dd4026662c2,
         type: 3}
@@ -11614,6 +11656,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyDrakos (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4922604503226813873, guid: f586099897b6235468443dd4026662c2,
+        type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5311681479134385601, guid: f586099897b6235468443dd4026662c2,
         type: 3}

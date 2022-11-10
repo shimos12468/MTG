@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class switchingManager : MonoBehaviour
 {
+
+    public static switchingManager Instance;
     [SerializeField]
-    GameObject player;
+    public GameObject player;
     [SerializeField]
     GameObject femaleperfab;
     [SerializeField]
@@ -18,6 +20,14 @@ public class switchingManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (Instance == null)
+        {
+            Instance=this;
+        }
+        else
+        {
+            Destroy(this);
+        }
 
         if (PlayerPrefs.GetInt("Type")==1)
         {
@@ -76,4 +86,10 @@ public class switchingManager : MonoBehaviour
         Gamemenu.GetComponent<SWIP_creatures>().Addcreature(creature);
         
     }
+
+    public void SetPlayer(GameObject creatureprefab)
+    {
+
+    }
+
 }
