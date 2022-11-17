@@ -31,8 +31,8 @@ TagManager:
   - PurchasedItemsList
   - DeadEnemy
   - swipeRight
-  - sipeLeft
   - swipeLeft
+  - CreatureName
   layers:
   - Default
   - TransparentFX

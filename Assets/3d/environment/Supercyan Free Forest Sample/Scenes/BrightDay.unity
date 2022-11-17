@@ -4160,19 +4160,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641097882}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1388292371}
-        m_TargetAssemblyTypeName: SWIP_creatures, singltone
-        m_MethodName: swipe_left
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &641097882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10451,19 +10439,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1780744549}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1388292371}
-        m_TargetAssemblyTypeName: SWIP_creatures, singltone
-        m_MethodName: swipe_right
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1780744549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16984,7 +16960,7 @@ GameObject:
   - component: {fileID: 3973376955488434818}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: CreatureName
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
