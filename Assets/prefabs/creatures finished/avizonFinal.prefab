@@ -1750,7 +1750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525fb0f7a5085104c86756d6965717fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manacoast: 10
+  manacoast: 1
   Hmanacoast: 10
   castPoint: {fileID: 6119352907948226608}
   rotationofspell: {fileID: 5113138943657946283}

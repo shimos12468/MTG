@@ -28,7 +28,11 @@ public class Spell : MonoBehaviour
         Debug.Log(other.gameObject.tag);
         if (other.gameObject.GetComponent<Pathfinder>())
         {
-            other.gameObject.GetComponent<Pathfinder>().TakeDamage(damage ,Parent);
+            bool m = other.gameObject.GetComponent<Pathfinder>().TakeDamage(damage ,Parent);
+            if(m == true)
+            {
+                Parent.TakeExp(10, 2, 10);
+            }
             Destroy(this.gameObject);
         }
 

@@ -258,8 +258,10 @@ public class Stats : MonoBehaviour
 
     public void TakeExp(float exp ,int points ,int coins)
     {
+        Debug.Log("here");
         creature.experiance += exp;
         creature.Points += points;
         creature.coins += coins;
+        setUI();
     }
 }

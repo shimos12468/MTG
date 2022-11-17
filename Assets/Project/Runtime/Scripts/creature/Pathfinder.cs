@@ -135,7 +135,7 @@ public class Pathfinder : MonoBehaviour
         Debug.Log("NotActive");
     }
 
-    public void  TakeDamage(float Damage ,Stats stat)
+    public bool  TakeDamage(float Damage ,Stats stat)
     {
        
         enemyStats.Health -= Damage;
@@ -149,7 +149,10 @@ public class Pathfinder : MonoBehaviour
             //set daying animation  , after that make transition to  enable material change or color change 
             gameObject.tag = "DeadEnemy";
             Destroy(this.gameObject ,10);
+            return true;
         }
+        return false;
     }
+
 
 }
