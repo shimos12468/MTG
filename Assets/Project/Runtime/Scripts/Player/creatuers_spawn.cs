@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 public class creatuers_spawn : MonoBehaviour
 {
    
+    public static creatuers_spawn instance;
     public List <GameObject>creatures = new List<GameObject>();
 
     [SerializeField]
@@ -18,8 +21,21 @@ public class creatuers_spawn : MonoBehaviour
     public TMP_Text text;
 
 
-    
-    
+    private void Start()
+    {
+        if (instance == null) instance = this;
+        else Destroy(this);
+
+
+        GameObject right = GameObject.FindGameObjectWithTag("swipeRight");
+        GameObject left = GameObject.FindGameObjectWithTag("swipeLeft");
+        GameObject Text = GameObject.FindGameObjectWithTag("swipeLeft");
+        text = Text.GetComponent<TMP_Text>();
+        right.GetComponent<Button>().onClick.AddListener(() => swipe_right());
+        left.GetComponent<Button>().onClick.AddListener(() => swipe_left());
+
+    }
+
     public void spawncreature()
     {
         GameObject creature = Instantiate(creatures[index], spawner);
@@ -38,6 +54,7 @@ public class creatuers_spawn : MonoBehaviour
         if (m < creatures.Count)
         {
             index++;
+            Debug.Log(creatures[index].name);
             text.text = creatures[index].GetComponent<Stats>().creature.name;
         }
     }

@@ -1,9 +1,7 @@
 {
     "name": "spells",
     "rootNamespace": "",
-    "references": [
-        "GUID:e153b660028c3cc4db89c0c98f698fce"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

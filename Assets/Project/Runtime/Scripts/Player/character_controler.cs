@@ -14,7 +14,7 @@ public class character_controler : MonoBehaviour
     public static character_controler Instance;
     public CharacterController controler;
     public Transform cam;
-     
+    public Transform direction; 
     public Animator anim;
     public float turnSmoothTime = 0.1f;
     public float runningSpeed;
@@ -63,6 +63,7 @@ public class character_controler : MonoBehaviour
             float vertical = Input.GetAxisRaw("Vertical");
             Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
+            CaputeEnemy();
 
             if (Input.GetMouseButtonDown(1) && creaturealreadyspawned == false)
             {
@@ -123,6 +124,22 @@ public class character_controler : MonoBehaviour
         }
 
     }
+
+    private void CaputeEnemy()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(direction.transform.position, direction.transform.TransformDirection(Vector3.forward), out hit, 100 ))
+        {
+            if (hit.collider.tag == "DeadEnemy")
+            {
+                 GameObject enemy= hit.collider.gameObject.GetComponent<collectcreture>().GetPrefab();
+                 hit.collider.gameObject.GetComponent<collectcreture>().DestroyEnemy();
+                 creatuers_spawn.instance.creatures.Add(enemy);
+            }
+           
+        }
+    }
+
     private void idle()
     {
         anim.SetFloat("velocidad", 0, 0.1f, Time.deltaTime);

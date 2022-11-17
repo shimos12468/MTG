@@ -35,6 +35,7 @@ public class Pathfinder : MonoBehaviour
     public EnemyStats enemyStats;
     public float SightRange, AttackRange;
     public bool PlayerInSightRange, PlayerInAttackRange;
+   
     
     void Start()
     {
@@ -138,13 +139,16 @@ public class Pathfinder : MonoBehaviour
     {
        
         enemyStats.Health -= Damage;
+        slider.value = enemyStats.Health;
         //slider.value = enemyStats.Health;
         if (enemyStats.Health <= 0)
         {
 
 
             stat.TakeExp(enemyStats.exp, enemyStats.points, enemyStats.coins);
-            Destroy(this.gameObject);
+            //set daying animation  , after that make transition to  enable material change or color change 
+            gameObject.tag = "DeadEnemy";
+            Destroy(this.gameObject ,10);
         }
     }
 

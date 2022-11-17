@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8129065465456312131}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopR3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8267699126961408608}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopRPole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2265457753667788740}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RigDrakorse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1008135405243404235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BocaUp_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2541731901384524471}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,141 +158,6 @@ Transform:
   m_Father: {fileID: 3223341933078983469}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 3.0215597, y: 90.542816, z: 100.01992}
---- !u!1 &899426755259137494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5814570691754257816}
-  - component: {fileID: 7852633691068052920}
-  - component: {fileID: 8576253959574707932}
-  m_Layer: 0
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &5814570691754257816
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899426755259137494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2177586791719100981}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7852633691068052920
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899426755259137494}
-  m_CullTransparentMesh: 1
---- !u!114 &8576253959574707932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 899426755259137494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: dead
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 1.15
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 1
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &900368794314912762
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8709896253716078017}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopLPole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,153 +190,6 @@ Transform:
   m_Father: {fileID: 7926915357703310130}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -89.98021, y: -179.99998, z: 0}
---- !u!1 &916175319839265903
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2177586791719100981}
-  - component: {fileID: 7509254248282900278}
-  - component: {fileID: 2316884751864400403}
-  - component: {fileID: 1625974055251820953}
-  - component: {fileID: 1358017484061455144}
-  m_Layer: 0
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2177586791719100981
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916175319839265903}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.1828e-11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5814570691754257816}
-  m_Father: {fileID: 4035128652004027461}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000000020489, y: 0.3479}
-  m_SizeDelta: {x: 2.6112, y: 1.6957}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7509254248282900278
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916175319839265903}
-  m_CullTransparentMesh: 1
---- !u!114 &2316884751864400403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916175319839265903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!114 &1625974055251820953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916175319839265903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a50d85a8695fc824e85d8c73aa8a36b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1358017484061455144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916175319839265903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2316884751864400403}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 758870157878892090}
-        m_TargetAssemblyTypeName: collectcreture, spells
-        m_MethodName: SendPrefab
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &917381884097979078
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5474290100012196748}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +231,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1368689004548810409}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataDownRPole_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1679335854327466069}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BocaDown_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,7 +293,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6213464908337869665}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cola3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,6 +315,82 @@ Transform:
   m_Father: {fileID: 6197142246373409897}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1416157090965802960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7932075330733988554}
+  - component: {fileID: 7970866523841307283}
+  - component: {fileID: 8423866936994221444}
+  m_Layer: 10
+  m_Name: fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7932075330733988554
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416157090965802960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4407302064049397823}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7970866523841307283
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416157090965802960}
+  m_CullTransparentMesh: 1
+--- !u!114 &8423866936994221444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416157090965802960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1455841418177555057
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5672656007767252152}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BocaUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1499872956815225542}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopL3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2269414086700059094}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataDownLPole_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,7 +494,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4087815896714300491}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cola1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,7 +526,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1051731505154171789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cuello2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8864196056707458990}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -796,7 +590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3607384352181625001}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -828,7 +622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6691604767061924809}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cuerpo3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +656,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4424011068199417228}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 16462586069433540}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 860736745643322480}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +752,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3799764718214018376}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopRPole_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,7 +783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7078496210418226847}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackLIk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1021,7 +815,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6346703850285119391}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cuerpo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,7 +847,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3223341933078983469}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cuerpo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1088,7 +882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4547039325345575599}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Attack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +916,7 @@ GameObject:
   - component: {fileID: 4547039325478066234}
   - component: {fileID: 4547039325478066232}
   - component: {fileID: 4547039325478066239}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +992,7 @@ GameObject:
   - component: {fileID: 4547039325774033584}
   - component: {fileID: 4547039325774033590}
   - component: {fileID: 4547039325774033591}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6008,7 +5802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6578497319721706961}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6040,7 +5834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8320608158838357185}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataDownRPole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6072,7 +5866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 519155344145426892}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopLPole_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6103,7 +5897,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5470201879337753306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackLIk_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6139,7 +5933,7 @@ GameObject:
   - component: {fileID: 5506198402495484452}
   - component: {fileID: 145436131}
   - component: {fileID: 758870157878892090}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EnemyDrakos
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -6201,7 +5995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 4922604503226813878}
-  slider: {fileID: 0}
+  slider: {fileID: 8921921430274366309}
   WhatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -6284,7 +6078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 806045559990839250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cuerpo4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6316,7 +6110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1635775293507830662}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataDownLPole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6348,7 +6142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1501001555950258659}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BocaDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6380,7 +6174,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6197142246373409897}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cola3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6412,7 +6206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7016574779042593774}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopRIk_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6434,6 +6228,135 @@ Transform:
   m_Father: {fileID: 5501641387541366975}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6125706590724951121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4407302064049397823}
+  - component: {fileID: 2004037917313945202}
+  - component: {fileID: 4845186341705763918}
+  - component: {fileID: 8921921430274366309}
+  m_Layer: 10
+  m_Name: slider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4407302064049397823
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125706590724951121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7932075330733988554}
+  m_Father: {fileID: 4035128652004027461}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 3.08165, y: 0.5594299}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2004037917313945202
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125706590724951121}
+  m_CullTransparentMesh: 1
+--- !u!114 &4845186341705763918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125706590724951121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8921921430274366309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6125706590724951121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 4845186341705763918}
+  m_FillRect: {fileID: 7932075330733988554}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 0
+  m_Value: 100
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6148539270366675188
 GameObject:
   m_ObjectHideFlags: 0
@@ -6446,7 +6369,7 @@ GameObject:
   - component: {fileID: 1104842022042466185}
   - component: {fileID: 7653846747738305879}
   - component: {fileID: 1347947036757204176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6465,7 +6388,7 @@ RectTransform:
   m_LocalScale: {x: 0.08333331, y: 0.083333336, z: 0.08333331}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2177586791719100981}
+  - {fileID: 4407302064049397823}
   m_Father: {fileID: 5700231230677767947}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6544,7 +6467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6793655706870494457}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cuello1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6576,7 +6499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4302054262309910833}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6609,7 +6532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3645316025219050650}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackRIk_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6640,7 +6563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2314216842325274837}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackRIk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6672,7 +6595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9212531421241313055}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopLIk_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6703,7 +6626,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1035162595373331065}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cola2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6735,7 +6658,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5501641387541366975}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopRIk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6767,7 +6690,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7926915357703310130}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6808,7 +6731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778874737286365858}
   - component: {fileID: 4583259885739890087}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: model:Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6929,7 +6852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1834010306866633980}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackR3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6960,7 +6883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5311681479134385601}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6992,7 +6915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6052190477014275364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7024,7 +6947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7602826016968578907}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackL3_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7055,7 +6978,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3180249600338098670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataBackR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7087,7 +7010,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2102502023070266087}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7119,7 +7042,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 935378258567495460}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PataTopLIk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

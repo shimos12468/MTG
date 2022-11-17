@@ -26,12 +26,13 @@ TagManager:
   - character
   - freeSlot
   - busySlot
-  - lvl1
-  - lvl2
-  - lvl3
   - ground
   - GameMenu
   - PurchasedItemsList
+  - DeadEnemy
+  - swipeRight
+  - sipeLeft
+  - swipeLeft
   layers:
   - Default
   - TransparentFX
@@ -43,7 +44,7 @@ TagManager:
   - Creature
   - Ground
   - 
-  - 
+  - Enemy
   - 
   - 
   - 

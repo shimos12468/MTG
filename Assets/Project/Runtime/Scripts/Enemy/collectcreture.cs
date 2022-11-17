@@ -14,15 +14,13 @@ public class collectcreture : MonoBehaviour
         //by die animation event
     }
 
-    public GameObject GetCreaturePrefab()
+    public void DestroyEnemy()
     {
-        return CreaturePrefab;
+        Destroy(this.gameObject);
     }
 
-    public void SendPrefab()
+    public GameObject GetPrefab()
     {
-        Debug.Log("clicked");
-        switchingManager.Instance.player.GetComponent<creatuers_spawn>().AddPrefab(CreaturePrefab);
-
+        return CreaturePrefab;
     }
 }
