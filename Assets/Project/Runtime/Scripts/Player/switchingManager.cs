@@ -29,6 +29,9 @@ public class switchingManager : MonoBehaviour
             Destroy(this);
         }
 
+        float musicvolume = PlayerPrefs.HasKey("musicVolume") == true ? PlayerPrefs.GetFloat("musicVolume") : -1f;
+        Camera.main.GetComponent<AudioSource>().volume = musicvolume!=-1?musicvolume:1;
+
         if (PlayerPrefs.GetInt("Type")==1)
         {
             player = Instantiate(femaleperfab);

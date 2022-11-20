@@ -1,0 +1,34 @@
+{
+    "name": "MenuInputAction",
+    "maps": [
+        {
+            "name": "Menu",
+            "id": "6dfe65cc-85f7-4150-98f6-5a582aba22d4",
+            "actions": [
+                {
+                    "name": "Escape",
+                    "type": "Button",
+                    "id": "eb985f28-10d6-460a-be63-d92c39e69407",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7bf02678-5702-4726-80a0-be2fe5bbd679",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

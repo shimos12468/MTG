@@ -11,6 +11,7 @@ public class creature_controlerV2 : MonoBehaviour
     public Rigidbody rb;
     public float forcefactor = 50;
     public float RotationSpeed = 5;
+    private Vector2 turn;
     void Start()
     {
        
@@ -30,7 +31,9 @@ public class creature_controlerV2 : MonoBehaviour
             rb.AddRelativeForce(0, -gameObject.GetComponent<Stats>().creatureStats[7].Stat * 0.1f* Time.deltaTime, 0);
         }
 
-        transform.Rotate((Input.GetAxis("Mouse Y") * RotationSpeed * Time.deltaTime), (Input.GetAxis("Mouse X") * RotationSpeed * Time.deltaTime), 0, Space.World);
+        //turn.x += Input.GetAxis("Mouse X");
+        //turn.y += Input.GetAxis("Mouse Y");
+        //transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0f);
 
         laserShoot();
 
