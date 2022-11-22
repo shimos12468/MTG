@@ -12,7 +12,7 @@ public class SWIP_creatures : MonoBehaviour
     public Sprite playersprite;
     public  GameObject RunesUI;
     public GameObject ItemsUI;
-    public GameObject itemPrefab;
+    public GameObject map;
     public List<GameObject> creatures = new List<GameObject>();
     public Image ImageUI;
     public List<Sprite> CreaturesIMG = new List<Sprite>();
@@ -27,6 +27,7 @@ public class SWIP_creatures : MonoBehaviour
     }
     private void Awake()
     {
+        Debug.Log(Time.timeScale);
         if (Instance==null)
         {
             DontDestroyOnLoad(gameObject);
@@ -46,12 +47,20 @@ public class SWIP_creatures : MonoBehaviour
         {
             MainMenuUI.SetActive(!state);
             state = !state;
+            
         }
         if (state)
         {
             characterOptionsUI.SetActive(true);
             creatureOptionsUI.SetActive(false);
             ImageUI.sprite = playersprite;
+            map.SetActive(false);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+            map.SetActive(true);
         }
        
 

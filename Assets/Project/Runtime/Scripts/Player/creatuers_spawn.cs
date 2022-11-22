@@ -29,7 +29,7 @@ public class creatuers_spawn : MonoBehaviour
 
         GameObject right = GameObject.FindGameObjectWithTag("swipeRight");
         GameObject left = GameObject.FindGameObjectWithTag("swipeLeft");
-        GameObject Text = GameObject.FindGameObjectWithTag("swipeLeft");
+        GameObject Text = GameObject.FindGameObjectWithTag("CreatureName");
         text = Text.GetComponent<TMP_Text>();
         right.GetComponent<Button>().onClick.AddListener(() => swipe_right());
         left.GetComponent<Button>().onClick.AddListener(() => swipe_left());

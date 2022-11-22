@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 
 
+using static utilities;
 public class itemMaker : MonoBehaviour 
 {
     public Transform itemList;

@@ -1787,7 +1787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3417534252222627695}
   m_LocalRotation: {x: 0.7561115, y: 0.13263889, z: 0.000899747, w: 0.64086}
-  m_LocalPosition: {x: -0.0000018884186, y: 0.0000021319254, z: 0.00000027243777}
+  m_LocalPosition: {x: -0.000002832628, y: 0.0000031978882, z: 0.0000004086569}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2029,7 +2029,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3417534252756827987}
-  m_LocalRotation: {x: 0.7676132, y: 0.13263334, z: -0.0015066713, w: 0.6270376}
+  m_LocalRotation: {x: 0.76761323, y: 0.13263337, z: -0.0015066713, w: 0.62703764}
   m_LocalPosition: {x: -0.0000009442093, y: 0.0000010659627, z: 0.00000013621889}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3442,7 +3442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6205486760216921767}
   - component: {fileID: 2692420252668964534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3456,14 +3456,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5311771277368391151}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 3.06, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7031709373401150410}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!212 &2692420252668964534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3505,7 +3505,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed6c88b95152ca54fa0db85176bc0a55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 87ea2079a91b3e74f84b5cb700abb4d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

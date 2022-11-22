@@ -5,6 +5,8 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
+using static utilities;
+
 public class Rune : MonoBehaviour 
 {
 

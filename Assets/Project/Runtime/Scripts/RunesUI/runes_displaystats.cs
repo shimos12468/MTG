@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
+using static utilities;
 public class runes_displaystats : MonoBehaviour
 {
     public TMP_Text health;

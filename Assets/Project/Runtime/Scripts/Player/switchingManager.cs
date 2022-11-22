@@ -62,7 +62,7 @@ public class switchingManager : MonoBehaviour
                 }
                 creatures[i].SetActive(false);
 
-                //creatures[index % creatures.Count].GetComponent<queenflora>().setUI();
+                creatures[index % creatures.Count].GetComponent<Stats>().setUI();
             }
            
 
