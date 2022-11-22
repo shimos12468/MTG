@@ -14,7 +14,7 @@ public class creature_controlerV2 : MonoBehaviour
     private Vector2 turn;
     void Start()
     {
-       
+      
     }
 
     // Update is called once per frame
@@ -31,15 +31,13 @@ public class creature_controlerV2 : MonoBehaviour
             rb.AddRelativeForce(0, -gameObject.GetComponent<Stats>().creatureStats[7].Stat * 0.1f* Time.deltaTime, 0);
         }
 
-        //turn.x += Input.GetAxis("Mouse X");
-        //turn.y += Input.GetAxis("Mouse Y");
-        //transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0f);
+       
 
         laserShoot();
 
+       
 
-       
-       
+
         if (Input.GetKey(KeyCode.W))
         {
             Move(gameObject.GetComponent<Stats>().creatureStats[7].Stat, "forword");
@@ -126,7 +124,9 @@ public class creature_controlerV2 : MonoBehaviour
 
         if (!Input.GetMouseButton(1))
         {
-
+            turn.x += Input.GetAxis("Mouse X");
+            turn.y += Input.GetAxis("Mouse Y");
+            transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0f);
             rb.constraints = RigidbodyConstraints.FreezeRotationZ;
 
         }

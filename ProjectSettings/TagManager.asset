@@ -33,6 +33,9 @@ TagManager:
   - swipeRight
   - swipeLeft
   - CreatureName
+  - lvl2
+  - lvl1
+  - lvl3
   layers:
   - Default
   - TransparentFX
@@ -43,7 +46,7 @@ TagManager:
   - Player
   - Creature
   - Ground
-  - 
+  - MiniMap
   - Enemy
   - 
   - 
