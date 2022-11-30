@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
+using System;
+
+
 
 public class SWIP_creatures : MonoBehaviour
 {
+
+    
 
     public static SWIP_creatures Instance;
     public GameObject MainMenuUI;
@@ -12,7 +18,7 @@ public class SWIP_creatures : MonoBehaviour
     public Sprite playersprite;
     public  GameObject RunesUI;
     public GameObject ItemsUI;
-    public GameObject map;
+    public GameObject minimap;
     public List<GameObject> creatures = new List<GameObject>();
     public Image ImageUI;
     public List<Sprite> CreaturesIMG = new List<Sprite>();
@@ -20,49 +26,36 @@ public class SWIP_creatures : MonoBehaviour
     public GameObject creatureOptionsUI;
     public int index = 0;
     public Transform purchasedItemList;
+
+    private EnviromentSceneInput inputActions;
+    private InputAction Escape;
     // Start is called before the first frame update
+    
     void Start()
     {
-        
+        Escape = inputActions.GeneralInputs.Escape;
+        Escape.performed += escape;
+        Escape.Enable();
     }
-    private void Awake()
+
+    private void escape(InputAction.CallbackContext obj)
     {
-        Debug.Log(Time.timeScale);
-        if (Instance==null)
-        {
-            DontDestroyOnLoad(gameObject);
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+        MainMenuUI.SetActive(!state);
+        state = !state;
 
-    // Update is called once per frame
-    void Update()
-    { 
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            MainMenuUI.SetActive(!state);
-            state = !state;
-            
-        }
         if (state)
         {
             characterOptionsUI.SetActive(true);
             creatureOptionsUI.SetActive(false);
             ImageUI.sprite = playersprite;
-            map.SetActive(false);
+            minimap.SetActive(false);
             Time.timeScale = 0;
         }
         else
         {
             Time.timeScale = 1;
-            map.SetActive(true);
+            minimap.SetActive(true);
         }
-       
 
         if (creatures.Count > 0)
         {
@@ -80,6 +73,23 @@ public class SWIP_creatures : MonoBehaviour
             }
         }
     }
+
+    private void Awake()
+    {
+        inputActions = new EnviromentSceneInput();
+       
+        if (Instance==null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+   
     public void Addcreature(GameObject creature)
     {
         creatures.Add(creature);
@@ -109,13 +119,6 @@ public class SWIP_creatures : MonoBehaviour
         }
     }
    
-
-    
-
-    public void SendPlayer()
-    {
-      
-    }
 
     public GameObject CurrentCreature()
     {

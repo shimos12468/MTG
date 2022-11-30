@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class switchingManager : MonoBehaviour
 {
@@ -17,6 +19,25 @@ public class switchingManager : MonoBehaviour
     //GameObject playercam;
     int index = -1;
     public  List<GameObject> creatures = new List<GameObject>();
+    private EnviromentSceneInput inputActions;
+    private InputAction swapBetweenCreatures;
+    private InputAction foucasPlayer;
+
+    private void Awake()
+    {
+        inputActions = new EnviromentSceneInput();
+        swapBetweenCreatures = inputActions.GeneralInputs.SwapBetweenCreatures;
+        swapBetweenCreatures.performed += SwapBetweenCreature;
+        swapBetweenCreatures.Enable();
+        foucasPlayer = inputActions.GeneralInputs.FoucsPlayer;
+        foucasPlayer.performed += FoucsPlayer;
+        foucasPlayer.Enable();
+
+
+    }
+
+  
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,40 +67,37 @@ public class switchingManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FoucsPlayer(InputAction.CallbackContext obj)
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+
+        foreach (GameObject creature in creatures)
         {
-            player.GetComponent<character_controler>().isFoucsed = false;
-            index += 1;
-            creatures[index%creatures.Count].SetActive(true);
-            for(int i = 0; i < creatures.Count; i++)
-            {
-                if (i == (index%creatures.Count))
-                {
-                    continue;
-                }
-                creatures[i].SetActive(false);
-
-                creatures[index % creatures.Count].GetComponent<Stats>().setUI();
-            }
-           
-
-
+            creature.gameObject.SetActive(false);
         }
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+
+
+        player.GetComponent<character_controler>().isFoucsed = true;
+
+    }
+
+    private void SwapBetweenCreature(InputAction.CallbackContext obj)
+    {
+        player.GetComponent<character_controler>().isFoucsed = false;
+
+
+        index += 1;
+        index = index == creatures.Count ? 0 : index;
+        creatures[index].SetActive(true);
+        for (int i = 0; i < creatures.Count; i++)
         {
-            //playercam.gameObject.SetActive(true);
-            foreach (GameObject obj in creatures)
+            if (i == (index))
             {
-                obj.gameObject.SetActive(false);
+                continue;
             }
+            creatures[i].SetActive(false);
 
-           
-            player.GetComponent<character_controler>().isFoucsed = true;
+            creatures[index].GetComponent<Stats>().setUI();
         }
-        
     }
 
     public void Addcreature(GameObject creature)
@@ -90,9 +108,5 @@ public class switchingManager : MonoBehaviour
         
     }
 
-    public void SetPlayer(GameObject creatureprefab)
-    {
-
-    }
-
+   
 }
