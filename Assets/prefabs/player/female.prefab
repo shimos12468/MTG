@@ -5174,8 +5174,8 @@ MonoBehaviour:
   direction: {fileID: 409163167190190316}
   anim: {fileID: 1978408646662219944}
   turnSmoothTime: 0.1
-  runningSpeed: 100
-  walkSpeed: 60
+  runningSpeed: 1000
+  walkSpeed: 600
   selectionText: {fileID: 0}
   speed: 100
   isFoucsed: 0

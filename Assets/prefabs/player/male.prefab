@@ -3508,10 +3508,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creatures:
   - {fileID: 6353777382584910479, guid: 06f9fec242f655547a13e427d22e7cba, type: 3}
+  - {fileID: 2116010056441290266, guid: 659ef1395f572764881e9bfe905ffa5b, type: 3}
+  - {fileID: 7755997695156753152, guid: 7b368df99671012448e4b273b9372693, type: 3}
+  storedCreature:
+  - {fileID: 6353777382584910479, guid: 06f9fec242f655547a13e427d22e7cba, type: 3}
+  - {fileID: 2116010056441290266, guid: 659ef1395f572764881e9bfe905ffa5b, type: 3}
+  - {fileID: 7755997695156753152, guid: 7b368df99671012448e4b273b9372693, type: 3}
+  spawnedCreatures: []
   spawner: {fileID: 409163167190190316}
-  CHARACTER: {fileID: 7700723014214379888}
   switchingManager: {fileID: 0}
   index: 0
+  creatureIndex: -1
   text: {fileID: 0}
 --- !u!114 &3417534251613410628
 MonoBehaviour:
@@ -3531,8 +3538,8 @@ MonoBehaviour:
   direction: {fileID: 409163167190190316}
   anim: {fileID: 831907456976058533}
   turnSmoothTime: 0.1
-  runningSpeed: 100
-  walkSpeed: 60
+  runningSpeed: 1000
+  walkSpeed: 600
   selectionText: {fileID: 0}
   speed: 100
   isFoucsed: 0
