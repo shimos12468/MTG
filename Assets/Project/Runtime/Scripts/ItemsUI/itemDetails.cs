@@ -28,25 +28,25 @@ public class itemDetails : MonoBehaviour
         purcheseditemList = GameObject.FindGameObjectWithTag("PurchasedItemsList");
     }
 
-    public void purchaseItem()
-    {
-        CurrentCreature();
-        if (currentCreature != null)
-        {
-            Debug.Log("dede");
-            if (currentCreature.GetComponent<Stats>().creature.coins >= thisitem.price)
-            {
-                currentCreature.GetComponent<Stats>().creature.coins -= thisitem.price;
-                thisitem.ownership = true;
-                currentCreature.GetComponent<Stats>().items.Add(thisitem);
+    //public void purchaseItem()
+    //{
+    //    CurrentCreature();
+    //    if (currentCreature != null)
+    //    {
+    //        Debug.Log("dede");
+    //        if (currentCreature.GetComponent<Stats>().creature.coins >= thisitem.price)
+    //        {
+    //            currentCreature.GetComponent<Stats>().creature.coins -= thisitem.price;
+    //            thisitem.ownership = true;
+    //            currentCreature.GetComponent<Stats>().items.Add(thisitem);
                 
-                GameObject a = Instantiate(itemPrefab, purcheseditemList.transform);
-                a.GetComponent<itemDetails>().SetItem(thisitem);
-                thisitem.ownership = false;
-                currentCreature.GetComponent<Stats>().UpdateStats(thisitem ,'A');
-            }
-        }
-    }
+    //            GameObject a = Instantiate(itemPrefab, purcheseditemList.transform);
+    //            a.GetComponent<itemDetails>().SetItem(thisitem);
+    //            thisitem.ownership = false;
+    //            currentCreature.GetComponent<Stats>().UpdateStats(thisitem ,'A');
+    //        }
+    //    }
+    //}
 
     public void CurrentCreature()
     {
@@ -71,22 +71,22 @@ public class itemDetails : MonoBehaviour
     }
 
 
-    public void RemoveItem()
-    {
-        CurrentCreature();
-       for(int i = 0; i < currentCreature.GetComponent<Stats>().items.Count; i++)
-        {
-            if(thisitem.name== currentCreature.GetComponent<Stats>().items[i].name)
-            {
-                currentCreature.GetComponent<Stats>().items.RemoveAt(i);
+    //public void RemoveItem()
+    //{
+    //    CurrentCreature();
+    //   for(int i = 0; i < currentCreature.GetComponent<Stats>().items.Count; i++)
+    //    {
+    //        if(thisitem.name== currentCreature.GetComponent<Stats>().items[i].name)
+    //        {
+    //            currentCreature.GetComponent<Stats>().items.RemoveAt(i);
               
                 
-                currentCreature.GetComponent<Stats>().UpdateStats(thisitem ,'R');
-                Destroy(this.gameObject);
-                break;
-            }
-        }
-    }
+    //            currentCreature.GetComponent<Stats>().UpdateStats(thisitem ,'R');
+    //            Destroy(this.gameObject);
+    //            break;
+    //        }
+    //    }
+    //}
 
     public void SetItem(item item ,itemDetails itemAsset)
     {

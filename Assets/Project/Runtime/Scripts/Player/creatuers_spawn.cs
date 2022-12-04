@@ -28,7 +28,11 @@ public class creatuers_spawn : MonoBehaviour
 
 
     
-    
+    public List<GameObject> GetSpawnedCreatures()
+    {
+
+        return spawnedCreatures;
+    }
 
     private void Awake()
     {

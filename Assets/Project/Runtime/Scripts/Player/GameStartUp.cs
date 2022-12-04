@@ -8,8 +8,7 @@ public class GameStartUp : MonoBehaviour
 {
 
     public static GameStartUp Instance;
-    [SerializeField]
-    public GameObject player;
+   
     [SerializeField]
     GameObject femaleperfab;
     [SerializeField]
@@ -32,13 +31,13 @@ public class GameStartUp : MonoBehaviour
 
         if (PlayerPrefs.GetInt("Type")==1)
         {
-            player = Instantiate(femaleperfab);
+             Instantiate(femaleperfab);
             
         }
 
         if (PlayerPrefs.GetInt("Type") == 0)
         {
-            player = Instantiate(maleprefab);
+            Instantiate(maleprefab);
             
         }
 

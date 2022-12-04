@@ -36,6 +36,9 @@ TagManager:
   - lvl2
   - lvl1
   - lvl3
+  - ObjectStatsScreen
+  - OnPlayUI
+  - mnm
   layers:
   - Default
   - TransparentFX

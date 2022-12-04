@@ -15,9 +15,6 @@ public class Stats : MonoBehaviour
     public creature creature = new creature();
     public List<stat> creatureStats= new List<stat>();
     public List<rune> runes= new List<rune>();
-    public List<item> items = new List<item>();
-    float manacoast = 10;
-    float Hmanacoast = 10;
     TMP_Text health;
     TMP_Text magic;
     TMP_Text experiance;
@@ -108,7 +105,7 @@ public class Stats : MonoBehaviour
         GameObject newcreature = Instantiate(creature.UpgradeCreature);
         newcreature.GetComponent<Stats>().creatureStats = creatureStats;
         newcreature.GetComponent<Stats>().runes = runes;
-        newcreature.GetComponent<Stats>().items = items;
+       
         newcreature.transform.parent = null;
         newcreature.transform.position = position;
 
@@ -131,59 +128,59 @@ public class Stats : MonoBehaviour
         }
     }
 
-    public void UpdateStats(item newItem ,char c)
-    {
+    //public void UpdateStats(item newItem ,char c)
+    //{
 
-        if (c == 'A')
-        {
-        Debug.Log("updating stats...");
-        for(int i = 0; i < creatureStats.Count; i++)
-        {
-            for(int j = 0; j < newItem.stats.Count; j++)
-            {
-                if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
-                {
-                    stat stat2 = new stat();
-                    stat2 = creatureStats[i];
-                    stat2.Stat += newItem.stats[j].stat;
-                    stat2.baseStat += newItem.stats[j].stat;
-                    creatureStats[i] = stat2;
+    //    if (c == 'A')
+    //    {
+    //    Debug.Log("updating stats...");
+    //    for(int i = 0; i < creatureStats.Count; i++)
+    //    {
+    //        for(int j = 0; j < newItem.stats.Count; j++)
+    //        {
+    //            if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
+    //            {
+    //                stat stat2 = new stat();
+    //                stat2 = creatureStats[i];
+    //                stat2.Stat += newItem.stats[j].stat;
+    //                stat2.baseStat += newItem.stats[j].stat;
+    //                creatureStats[i] = stat2;
 
-                    Debug.Log("found A stat NICE");
-                }
-            }
-        }
-
-
-        }
+    //                Debug.Log("found A stat NICE");
+    //            }
+    //        }
+    //    }
 
 
-        if (c == 'R')
-        {
-            Debug.Log("updating stats...");
-            for (int i = 0; i < creatureStats.Count; i++)
-            {
-                for (int j = 0; j < newItem.stats.Count; j++)
-                {
-                    if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
-                    {
-                        stat stat2 = new stat();
-                        stat2 = creatureStats[i];
-                        stat2.Stat -= newItem.stats[j].stat;
-                        if (stat2.Stat < 0) stat2.Stat = 0;
-                        stat2.baseStat -= newItem.stats[j].stat;
-                        creatureStats[i] = stat2;
-
-                        Debug.Log("found A stat NICE");
-                    }
-                }
-            }
+    //    }
 
 
-        }
+    //    if (c == 'R')
+    //    {
+    //        Debug.Log("updating stats...");
+    //        for (int i = 0; i < creatureStats.Count; i++)
+    //        {
+    //            for (int j = 0; j < newItem.stats.Count; j++)
+    //            {
+    //                if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
+    //                {
+    //                    stat stat2 = new stat();
+    //                    stat2 = creatureStats[i];
+    //                    stat2.Stat -= newItem.stats[j].stat;
+    //                    if (stat2.Stat < 0) stat2.Stat = 0;
+    //                    stat2.baseStat -= newItem.stats[j].stat;
+    //                    creatureStats[i] = stat2;
 
-        setUI();
-    }
+    //                    Debug.Log("found A stat NICE");
+    //                }
+    //            }
+    //        }
+
+
+    //    }
+
+    //    setUI();
+    //}
 
     public void setUI()
     {

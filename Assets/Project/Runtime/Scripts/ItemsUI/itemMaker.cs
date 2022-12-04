@@ -13,10 +13,7 @@ public class itemMaker : MonoBehaviour
     public GameObject itemPrefab;
     public List<item> items = new List<item>();
 
-    private void Start()
-    {
-       
-    }
+   
 
     public void instantiateItems()
     {
@@ -31,22 +28,22 @@ public class itemMaker : MonoBehaviour
         }
     }
 
-    public void SetPurchesedItems()
-    {
-        for (int i = 0; i < SWIP_creatures.Instance.purchasedItemList.childCount; i++)
-        {
-            Destroy(SWIP_creatures.Instance.purchasedItemList.GetChild(i));
-        }
+    //public void SetPurchesedItems()
+    //{
+    //    for (int i = 0; i < SWIP_creatures.Instance.purchasedItemList.childCount; i++)
+    //    {
+    //        Destroy(SWIP_creatures.Instance.purchasedItemList.GetChild(i));
+    //    }
 
-        if (SWIP_creatures.Instance.creatures.Count > 0)
-        {
-            for (int i = 0; i < SWIP_creatures.Instance.creatures[SWIP_creatures.Instance.index % SWIP_creatures.Instance.creatures.Count].GetComponent<Stats>().items.Count; i++)
-            {
-                GameObject item = Instantiate(itemPrefab, SWIP_creatures.Instance.purchasedItemList);
-                item.GetComponent<itemDetails>().SetItem(SWIP_creatures.Instance.creatures[SWIP_creatures.Instance.index % SWIP_creatures.Instance.creatures.Count].GetComponent<Stats>().items[i]);
-            }
-        }
+    //    if (SWIP_creatures.Instance.creatures.Count > 0)
+    //    {
+    //        for (int i = 0; i < SWIP_creatures.Instance.creatures[SWIP_creatures.Instance.index % SWIP_creatures.Instance.creatures.Count].GetComponent<Stats>().items.Count; i++)
+    //        {
+    //            GameObject item = Instantiate(itemPrefab, SWIP_creatures.Instance.purchasedItemList);
+    //            item.GetComponent<itemDetails>().SetItem(SWIP_creatures.Instance.creatures[SWIP_creatures.Instance.index % SWIP_creatures.Instance.creatures.Count].GetComponent<Stats>().items[i]);
+    //        }
+    //    }
 
 
-    }
+    //}
 }

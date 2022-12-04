@@ -5060,6 +5060,7 @@ GameObject:
   - component: {fileID: 7358634496123042799}
   - component: {fileID: 5651566973986808943}
   - component: {fileID: 3417534251613410628}
+  - component: {fileID: -5006548869009621559}
   m_Layer: 0
   m_Name: female
   m_TagString: Player
@@ -5151,10 +5152,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creatures:
   - {fileID: 6353777382584910479, guid: 06f9fec242f655547a13e427d22e7cba, type: 3}
+  storedCreature: []
+  spawnedCreatures: []
   spawner: {fileID: 409163167190190316}
-  CHARACTER: {fileID: 7700723014214379888}
-  switchingManager: {fileID: 0}
   index: 0
+  creatureIndex: -1
   text: {fileID: 0}
 --- !u!114 &3417534251613410628
 MonoBehaviour:
@@ -5181,6 +5183,19 @@ MonoBehaviour:
   isFoucsed: 0
   jumpforce: 100
   gravity: 10
+--- !u!114 &-5006548869009621559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7700723014214379888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459eb3ef091319d45a8d3beae0ef7eec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsStatsScreens: {fileID: 0}
 --- !u!1 &7799151940148759307
 GameObject:
   m_ObjectHideFlags: 0

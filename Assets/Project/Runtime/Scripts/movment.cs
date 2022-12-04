@@ -10,7 +10,7 @@ public class movment : MonoBehaviour
     [SerializeField]
     GameObject startPoint;
     Rigidbody rb;
-    bool isGrounded = true;
+    
     public Vector3 jump;
     public float jumpForce = 2.0f;
 
@@ -24,7 +24,7 @@ public class movment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = true;
+       
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
