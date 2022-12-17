@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - creature
-  - camera
   - enemy
   - Health
   - Magic
@@ -15,30 +13,26 @@ TagManager:
   - HeroIcon
   - Avizon
   - Beckend
-  - text
-  - bone
-  - crystal
-  - Image
-  - evolve
-  - center
-  - right
   - left
-  - character
-  - freeSlot
-  - busySlot
   - ground
   - GameMenu
-  - PurchasedItemsList
   - DeadEnemy
   - swipeRight
   - swipeLeft
   - CreatureName
+  - ObjectStatsScreen
+  - OnPlayUI
+  - CharacterMenuScreen
+  - PurchasedItemsList
+  - creature
+  - camera
+  - test
+  - item
   - lvl2
   - lvl1
   - lvl3
-  - ObjectStatsScreen
-  - OnPlayUI
-  - mnm
+  - characterInventoryScreen
+  - SelectedItemList
   layers:
   - Default
   - TransparentFX

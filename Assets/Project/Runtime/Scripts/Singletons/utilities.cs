@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class utilities : MonoBehaviour
+public partial class utilities : MonoBehaviour
 {
     public struct Settings
     {
@@ -15,6 +15,7 @@ public class utilities : MonoBehaviour
     public enum Raritys { Common, Uncommon, Rare, Epic, Legendary }
     public enum statType { Health, crit, regen, mana, stamina, defence, damage, speed }
     public enum Types { Fire, Dark, Light, Metal, Water, Nature, Wind, Poison, Melee, Bug, Rock, Electric }
+    public enum Effect {Teleport ,Capture ,Walk}
 
     [System.Serializable]
     public struct stat
@@ -23,6 +24,13 @@ public class utilities : MonoBehaviour
         public float Stat;
         public float baseStat;
     }
+
+    public interface Iboot
+    {
+        public void OnWalk();
+        public void OnStop();
+    }
+
 
 
     [System.Serializable]

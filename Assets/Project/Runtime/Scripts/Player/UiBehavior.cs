@@ -28,12 +28,13 @@ public class UiBehavior : MonoBehaviour
         
         inputActions = new EnviromentSceneInput();
         objectsStatsScreens = GameObject.FindGameObjectWithTag("ObjectStatsScreen");
+        OnplayUI = GameObject.FindGameObjectWithTag("OnPlayUI");
         objectsStatsScreens.SetActive(false);
         Escape = inputActions.GeneralInputs.Escape;
         Escape.started += escape;
         Escape.Enable();
 
-        OnplayUI = GameObject.FindGameObjectWithTag("OnPlayUI");
+       
 
     }
     void Start()
