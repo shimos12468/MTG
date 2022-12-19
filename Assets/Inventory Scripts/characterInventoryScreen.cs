@@ -8,10 +8,11 @@ using UnityEngine.UI;
 public class characterInventoryScreen : MonoBehaviour
 {
     [SerializeField] TMP_Text Title, discription;
-    [SerializeField] GameObject itemPrefab ,selectedItemPrefab ,itemlist ,selecteditemList ,assign ,unAssign;
+    [SerializeField] SelectedItemsScreen SelectedItemsScreen;
+    [SerializeField] GameObject itemPrefab,itemlist ,assign ,unAssign;
     [SerializeField] Button itembutton;
     public static event Action<int>Assignitem;
-    public static event Action<int ,int> unAssignItem;
+    public static event Action<int ,int ,BaseItem> unAssignItem;
     private int counter = 0;
     private int selectedLimit = 4;
     private int selectedCounter = 0;
@@ -54,16 +55,22 @@ public class characterInventoryScreen : MonoBehaviour
 
         if (selectedCounter < selectedLimit)
         {
+            Debug.Log(selected + " hello" + selectedCounter + "  ");
             Assignitem?.Invoke(selected);
             unAssign.SetActive(true);
             assign.SetActive(false);
             items[selected].assigned = true;
             selectedCounter++;
-            GameObject Item = Instantiate(selectedItemPrefab, selecteditemList.transform);
+
+            SelectedItemsScreen.AddItem(items[selected]);
+
             selectedItems.Add(items[selected]);
+
+
         }
 
     }
+
 
     public void UnAssignItem()
     {
@@ -75,12 +82,13 @@ public class characterInventoryScreen : MonoBehaviour
                 ind = i; break;
             }
         }
+       
+        unAssignItem?.Invoke(selected ,ind, selectedItems[ind]);
         selectedItems.RemoveAt(ind);
-        unAssignItem?.Invoke(selected ,ind);
         unAssign.SetActive(false);
         assign.SetActive(true);
         items[selected].assigned = false;
-
+        selectedCounter--;
     }
     
 }

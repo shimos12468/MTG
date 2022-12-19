@@ -23,19 +23,12 @@ public class BaseItem  : MonoBehaviour
     public bool assigned = false;
     public bool enabled = false;
 
-    private void Update()
+    public void SetItemActive()
     {
-        
+        gameObject.SetActive(true);
+        gameObject.transform.localPosition = new Vector3(0f ,1 ,0);
     }
-    public virtual void MoveToPlayer( Transform character)
-    {
-       
-    }
-
-    public virtual void AddProprities(BaseItem item)
-    {
-
-    }
+  
     public virtual void AssignItem(GameObject character, List<GameObject> parts)
     {
         Debug.Log("nothing");

@@ -13,6 +13,7 @@ public class inventory : MonoBehaviour
     List<BaseItem>items= new List<BaseItem>();  
     List<BaseItem>SelectedItems= new List<BaseItem>(4) {new BaseItem()  , new BaseItem(), new BaseItem(), new BaseItem() };
     private int count = 0;
+    private int points;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +23,9 @@ public class inventory : MonoBehaviour
         characterInventory.SetActive(false);   
     }
 
-    private void UnAssignItem(int i , int j)
+    private void UnAssignItem(int i , int j ,BaseItem item)
     {
-
-        items.RemoveAt(i);
-        SelectedItems.RemoveAt(j);
+        SelectedItems[j] = new BaseItem();
     }
 
     private void AssignItem(int i)
@@ -34,6 +33,7 @@ public class inventory : MonoBehaviour
         
         items[i].assigned = true;
         SelectedItems[count % 4] = items[i];
+        count++;
     }
 
     // Update is called once per frame
@@ -62,7 +62,7 @@ public class inventory : MonoBehaviour
                             
 
 
-                           
+                           // you buy here you shoudl compare the points with price
                             if (hitColliders[i].GetComponent<BaseItem>())
                             {
 

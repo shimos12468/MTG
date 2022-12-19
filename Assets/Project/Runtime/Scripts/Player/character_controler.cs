@@ -23,10 +23,11 @@ public class character_controler : MonoBehaviour
     float turnsmoothvelocity;
     public float speed = 6f;
     public bool isFoucsed = true;
-    
+    private bool increase, decrease;
     public float jumpforce = 100;
     public float gravity = 10f;
     private bool creaturealreadyspawned = false;
+    public static Action<bool ,bool> changeselectedItem;
   
     // Start is called before the first frame update
     private void Awake()
@@ -70,6 +71,24 @@ public class character_controler : MonoBehaviour
                 idle();
                 
                 StartCoroutine(atacar());
+
+
+            }
+
+
+            if (Input.GetAxis("Mouse ScrollWheel")>0f)
+            {
+                increase = true;
+                decrease = false;
+                changeselectedItem?.Invoke(increase ,decrease);
+            }
+            if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+            {
+                increase = false;
+                decrease = true;
+                changeselectedItem?.Invoke(increase ,decrease);
+
+
 
 
             }
