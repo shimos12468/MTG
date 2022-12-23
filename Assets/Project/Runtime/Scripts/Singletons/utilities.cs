@@ -63,12 +63,14 @@ public partial class utilities : MonoBehaviour
         public int[] levelup;
     }
 
+
+    
+
     [System.Serializable]
     public struct creature
     {
         public string name;
-        public int Points;
-        public int coins;
+        public int skillPoints;
         public Sprite Icon;
         public float experiance;
         public float ExperiancelimitForUpgrade;
@@ -78,4 +80,48 @@ public partial class utilities : MonoBehaviour
         public Types Stype;
         public GameObject UpgradeCreature;
     }
+
+
+    [System.Serializable]
+    public class Rune
+    {
+        public string name;
+        public int level;
+        public int priceForUnlock;
+        public int priceforupgrade;
+        public Sprite[] icons = new Sprite[3];
+        public stat[] stats; 
+
+        public virtual void excute()
+        {
+
+        }
+
+    }
+
+    
+    [System.Serializable]
+    public class HealthRune : Rune
+    {
+
+        public override void excute()
+        {
+            base.excute();
+        }
+    }
+    [System.Serializable]
+    public class DamageRune : Rune
+    {
+
+        public override void excute()
+        {
+            base.excute();
+        }
+    }
+
+}
+
+public interface IUIClicked
+{
+    public void Onclicked();
 }

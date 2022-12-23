@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class runeSelection : MonoBehaviour
+public class CreatureIconIdentity : MonoBehaviour
 {
-    private Rune rune;
+
+
+    public GameObject parent;
+    public int index = -1;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +21,9 @@ public class runeSelection : MonoBehaviour
         
     }
 
-    public void GetselectedRune(Rune item)
-    {
-        this.rune = item;
-    }
 
-    public void sendToPurchesdRune()
+    public void OnButtonClick()
     {
-        rune.Unlock();
-        
+        parent.GetComponent<CharacterTeamScreen>().Onclick(index);
     }
 }

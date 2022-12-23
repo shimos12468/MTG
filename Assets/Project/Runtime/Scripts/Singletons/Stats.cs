@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,42 +8,58 @@ using static utilities;
 public class Stats : MonoBehaviour
 {
 
-    
-    
 
-    public creature creature = new creature();
-    public List<stat> creatureStats= new List<stat>();
-    public List<rune> runes= new List<rune>();
-    TMP_Text health;
-    TMP_Text magic;
-    TMP_Text experiance;
-    TMP_Text Name;
-    TMP_Text LEVEL;
-    Image img;
-
-    
-    public Dictionary<string, float[]> StatsDictionary = new Dictionary<string, float[]>();
-
-    // Start is called before the first frame update
-    void Start()
+    public struct creatureUIStats
     {
-        health = GameObject.FindGameObjectWithTag("Health").GetComponent<TMP_Text>();
-        magic = GameObject.FindGameObjectWithTag("Magic").GetComponent<TMP_Text>();
-        experiance = GameObject.FindGameObjectWithTag("experiance").GetComponent<TMP_Text>();
-        LEVEL = GameObject.FindGameObjectWithTag("Level").GetComponent<TMP_Text>();
-        Name = GameObject.FindGameObjectWithTag("name").GetComponent<TMP_Text>();
-        img = GameObject.FindGameObjectWithTag("HeroIcon").GetComponent<Image>();
+        public string health;
+        public string magic;
+        public string experiance;
+        public string level;
+        public string name;
+        public Sprite image;
 
-        for(int i = 0; i < creatureStats.Count; i++)
-        {
-           float[] m = new float[2]{ creatureStats[i].Stat, creatureStats[i].baseStat };
-           StatsDictionary.Add(creatureStats[i].name.ToString(),m);
-        }
-       
-
-        setUI();
     }
 
+    creatureUIStats creatureUI;
+    public static Action<creatureUIStats> CreatureUIPanel;
+    public List<Rune> runesOptained;
+    public creature creature = new creature();
+
+
+    public List<stat> creatureStats = new List<stat>();
+    
+    public int NumOfEvolve;
+    public int[] evolveLevels;
+    public int evolveStages = 0;
+
+
+
+    void Start()
+    {
+        creatureUI.health = creatureStats[0].Stat + " / " + creatureStats[0].baseStat.ToString();
+        creatureUI.magic = creatureStats[3].Stat.ToString() + " / " + creatureStats[3].baseStat;
+        creatureUI.name = creature.name;
+        creatureUI.level = creature.level.ToString();
+        creatureUI.experiance = creature.experiance.ToString() + " / " + creature.ExperiancelimitForUpgrade;
+        creatureUI.image = creature.Icon;
+
+        setUI();
+
+        evolveLevels = new int[NumOfEvolve];
+        for (int i = 0; i < NumOfEvolve; i++)
+        {
+            evolveLevels[i] = i * 2 + 3;
+        }
+    }
+
+    public void setUI()
+    {
+
+
+        CreatureUIPanel?.Invoke(creatureUI);
+
+
+    }
 
     private void Update()
     {
@@ -55,67 +70,40 @@ public class Stats : MonoBehaviour
             creature.ExperiancelimitForUpgrade += 2;
         }
 
-        if (creature.level >= 2)
+        if (evolveStages < evolveLevels.Length && creature.level >= evolveLevels[evolveStages])
         {
-             
+
             EvolveCreature();
+            evolveStages++;
         }
 
-      
+
     }
 
 
-    
-    public void updateScript(rune rune)
-    {
 
-        
-        for (int i = 0; i < runes.Count; i++)
-        {
-            if (rune.name == runes[i].name)
-            {
-                runes[i] = rune;
-                break;
-
-            }
-        }
-
-        for (int i = 0; i < runes.Count; i++)
-        {
-            if (rune.name == creatureStats[i].name)
-            {
-                stat stat = new stat();
-                stat = creatureStats[i];
-                stat.Stat+= rune.Stat;
-                creatureStats[i] = stat;
-                break;
-
-            }
-        }
-        setUI();
-    }
-
+   
     private void EvolveCreature()
     {
-        Debug.Log("Evolving");
+       
         if (creature.UpgradeCreature != null)
         {
 
-        Vector3 position = transform.position;
-        GameObject newcreature = Instantiate(creature.UpgradeCreature);
-        newcreature.GetComponent<Stats>().creatureStats = creatureStats;
-        newcreature.GetComponent<Stats>().runes = runes;
-       
-        newcreature.transform.parent = null;
-        newcreature.transform.position = position;
+            Vector3 position = transform.position;
+            GameObject newcreature = Instantiate(creature.UpgradeCreature);
+            newcreature.GetComponent<Stats>().creatureStats = creatureStats;
+           
 
-        for(int i = 0; i < SWIP_creatures.Instance.creatures.Count; i++)
+            newcreature.transform.parent = null;
+            newcreature.transform.position = position;
+
+            for (int i = 0; i < SWIP_creatures.Instance.creatures.Count; i++)
             {
                 if (SWIP_creatures.Instance.creatures[i].GetComponent<Stats>().creature.name == creature.name)
                 {
                     SWIP_creatures.Instance.creatures[i] = newcreature;
                 }
-           }
+            }
 
             for (int i = 0; i < SWIP_creatures.Instance.CreaturesIMG.Count; i++)
             {
@@ -128,80 +116,11 @@ public class Stats : MonoBehaviour
         }
     }
 
-    //public void UpdateStats(item newItem ,char c)
-    //{
-
-    //    if (c == 'A')
-    //    {
-    //    Debug.Log("updating stats...");
-    //    for(int i = 0; i < creatureStats.Count; i++)
-    //    {
-    //        for(int j = 0; j < newItem.stats.Count; j++)
-    //        {
-    //            if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
-    //            {
-    //                stat stat2 = new stat();
-    //                stat2 = creatureStats[i];
-    //                stat2.Stat += newItem.stats[j].stat;
-    //                stat2.baseStat += newItem.stats[j].stat;
-    //                creatureStats[i] = stat2;
-
-    //                Debug.Log("found A stat NICE");
-    //            }
-    //        }
-    //    }
-
-
-    //    }
-
-
-    //    if (c == 'R')
-    //    {
-    //        Debug.Log("updating stats...");
-    //        for (int i = 0; i < creatureStats.Count; i++)
-    //        {
-    //            for (int j = 0; j < newItem.stats.Count; j++)
-    //            {
-    //                if (newItem.stats[j].name.ToString() == creatureStats[i].name.ToString())
-    //                {
-    //                    stat stat2 = new stat();
-    //                    stat2 = creatureStats[i];
-    //                    stat2.Stat -= newItem.stats[j].stat;
-    //                    if (stat2.Stat < 0) stat2.Stat = 0;
-    //                    stat2.baseStat -= newItem.stats[j].stat;
-    //                    creatureStats[i] = stat2;
-
-    //                    Debug.Log("found A stat NICE");
-    //                }
-    //            }
-    //        }
-
-
-    //    }
-
-    //    setUI();
-    //}
-
-    public void setUI()
+    public void TakeExp(float exp, int points, int coins)
     {
-
-        
-        img.sprite = creature.Icon;
-        health.text = creatureStats[0].Stat + " / " + creatureStats[0].baseStat.ToString();
-        magic.SetText(creatureStats[3].Stat.ToString() + " / " + creatureStats[3].baseStat);
-        LEVEL.SetText(creature.level.ToString());
-        Name.SetText(creature.name.ToString());
-        experiance.SetText(creature.experiance.ToString() + " / " + creature.ExperiancelimitForUpgrade);
-    }
-
-  
-
-    public void TakeExp(float exp ,int points ,int coins)
-    {
-        Debug.Log("here");
+       
         creature.experiance += exp;
-        creature.Points += points;
-        creature.coins += coins;
+        creature.skillPoints += points;
         setUI();
     }
 }

@@ -33,6 +33,7 @@ TagManager:
   - lvl3
   - characterInventoryScreen
   - SelectedItemList
+  - UI
   layers:
   - Default
   - TransparentFX

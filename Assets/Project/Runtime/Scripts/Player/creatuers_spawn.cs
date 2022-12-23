@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using System;
 
 public class creatuers_spawn : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class creatuers_spawn : MonoBehaviour
     public List <GameObject>creatures = new List<GameObject>();
     public List<GameObject> storedCreature = new List<GameObject>();
     public List<GameObject> spawnedCreatures = new List<GameObject>();
+
+
+
+    public static Action<Stats> creatureSpawned;
 
 
     [SerializeField]
@@ -102,22 +107,27 @@ public class creatuers_spawn : MonoBehaviour
 
     public void spawncreature()
     {
-        GameObject creature = Instantiate(storedCreature[index], spawner);
-        creature.transform.parent = null;
-        creature.gameObject.transform.position = spawner.transform.position;
-        gameObject.GetComponent<character_controler>().isFoucsed = false;
 
-        storedCreature.RemoveAt(index);
-        if (storedCreature.Count == 0)
+        if (index < storedCreature.Count)
         {
-            Debug.Log("no stored creatures");
+            GameObject creature = Instantiate(storedCreature[index], spawner);
+            creature.transform.parent = null;
+            creature.gameObject.transform.position = spawner.transform.position;
+            gameObject.GetComponent<character_controler>().isFoucsed = false;
+
+            storedCreature.RemoveAt(index);
+            if (storedCreature.Count == 0)
+            {
+                Debug.Log("no stored creatures");
+            }
+            index = index >= storedCreature.Count ? storedCreature.Count - 1 : index;
+            spawnedCreatures.Add(creature);
+            creatureSpawned?.Invoke(creature.GetComponent<Stats>());
+            if (index < storedCreature.Count && storedCreature.Count != 0)
+                text.text = storedCreature[index].GetComponent<Stats>().creature.name;
+            if (index == -1) text.text = "EMPTY";
         }
-        index = index>=storedCreature.Count ? storedCreature.Count-1 : index; 
-        spawnedCreatures.Add(creature);
-        
-        if(index<storedCreature.Count&&storedCreature.Count!=0)
-        text.text = storedCreature[index].GetComponent<Stats>().creature.name;
-        if (index == -1) text.text = "EMPTY";
+       
     }
 
 

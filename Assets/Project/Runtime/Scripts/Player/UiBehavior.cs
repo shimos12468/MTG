@@ -27,20 +27,9 @@ public class UiBehavior : MonoBehaviour
     {
         
         inputActions = new EnviromentSceneInput();
-        objectsStatsScreens = GameObject.FindGameObjectWithTag("ObjectStatsScreen");
-        OnplayUI = GameObject.FindGameObjectWithTag("OnPlayUI");
-        objectsStatsScreens.SetActive(false);
         Escape = inputActions.GeneralInputs.Escape;
         Escape.started += escape;
         Escape.Enable();
-
-       
-
-    }
-    void Start()
-    {
-        
-       
     }
     private void escape(InputAction.CallbackContext obj)
     {
@@ -48,26 +37,11 @@ public class UiBehavior : MonoBehaviour
 
         if (transform.GetComponent<character_controler>().isFoucsed)
         {
-            objectsStatsScreens.SetActive(!state);
-            OnplayUI.SetActive(state);
-
-            state = !state;
-            if (state)
-            {
-                Debug.Log("state is true");
                 List<GameObject> CreaturesAndCharacterInTheSceen = GetSpwanedcreatures();
-                Debug.Log(CreaturesAndCharacterInTheSceen.Count);
-                
                 menuAction?.Invoke(CreaturesAndCharacterInTheSceen, gameObject);
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                Time.timeScale = 1f;
-            }
+               
         }
-       
-
+    
     }
 
     public List<GameObject> GetSpwanedcreatures()

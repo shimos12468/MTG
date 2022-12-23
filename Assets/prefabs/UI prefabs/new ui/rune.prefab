@@ -301,7 +301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &730048917649718200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -617,7 +617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6726770382882306285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -842,7 +842,7 @@ PrefabInstance:
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
@@ -852,17 +852,17 @@ PrefabInstance:
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
@@ -902,12 +902,12 @@ PrefabInstance:
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 101.49335
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -22.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541325734425011107, guid: 0091d89f57a8c924ab59d4436ee62bab,
         type: 3}
