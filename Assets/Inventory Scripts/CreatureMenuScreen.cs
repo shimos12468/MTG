@@ -16,13 +16,13 @@ public class CreatureMenuScreen : MonoBehaviour
     public RectTransform map;
     List<GameObject> runesgameObject = new List<GameObject>();
     List<Rune>runes = new List<Rune>();
-    HealthRune health;
-    DamageRune damge;
+    public HealthRune health;
+   
 
     private void Awake()
     {
         runes.Add(health);
-        runes.Add(damge);
+        
         DisplayRunes();
     }
 
@@ -60,7 +60,7 @@ public class CreatureMenuScreen : MonoBehaviour
         Vector3[] positions = {new Vector3(0,1,0) ,new Vector3(2,0,0) ,new Vector3(2,1,0), new Vector3(0, -1, 0), new Vector3(-2, 0, 0), new Vector3(-2, -1, 0) , new Vector3(2, -1, 0), new Vector3(-2, 1, 0) };
 
         int constant = 50;
-        for (int i = 1; i <number-1; i++)
+        for (int i = 1; i <=20; i++)
         {
             int distance = i * constant+155;
 
@@ -71,6 +71,7 @@ public class CreatureMenuScreen : MonoBehaviour
                     GameObject objec = Instantiate(runePrefab, map);
                     
                     objec.transform.position = positions[i % positions.Length] * distance;
+                    objec.GetComponent<UIutilities>().index = i;
                     runesgameObject.Add(objec);
                 }
 
@@ -80,10 +81,14 @@ public class CreatureMenuScreen : MonoBehaviour
         }
 
 
-        for(int i = 0; i < runesgameObject.Count; i++)
+        for(int i = 0; i < runes.Count; i++)
         {
             runesgameObject[i].GetComponent<UIutilities>().index= i;
-            runesgameObject[i].GetComponent<UIutilities>().SetupUI(runes[i].name , runes[i].level.ToString(), runes[i].priceForUnlock.ToString(), runes[i].icons[runes[i].level], runes[i].stats);
+            runesgameObject[i].GetComponent<UIutilities>().SetupUI(runes[i].name , 
+                runes[i].level.ToString()
+                , runes[i].priceForUnlock.ToString()
+                , runes[i].icons[runes[i].level]
+                , runes[i].stats);
 
 
         }

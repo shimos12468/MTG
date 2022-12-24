@@ -149,6 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 1
+  Name: {fileID: 6944707590228104572}
+  Level: {fileID: 5708305060091672650}
+  image: {fileID: 7912336591713165531}
+  index: 0
 --- !u!1 &3476765451771970075
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6726770382882306285
 RectTransform:
   m_ObjectHideFlags: 0

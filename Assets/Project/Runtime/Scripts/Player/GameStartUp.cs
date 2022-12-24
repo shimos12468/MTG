@@ -14,7 +14,8 @@ public class GameStartUp : MonoBehaviour
     [SerializeField]
     GameObject maleprefab;
     [SerializeField]
-     
+
+    GameObject runesTextS , runesTextE, teamTextS , teamTextE  ,MainmenuS, MainmenuE;
     void Start()
     {
         if (Instance == null)
@@ -41,8 +42,34 @@ public class GameStartUp : MonoBehaviour
             
         }
 
+        
+       SetGameLanguage(PlayerPrefs.GetInt("Language"));
+        
+
     }
 
+
+    public void SetGameLanguage(int i )
+    {
+        if (i == 0)
+        {
+            teamTextS.SetActive(false); 
+            teamTextE.SetActive(true);
+            runesTextE.SetActive(true);
+            runesTextS.SetActive(false);
+            MainmenuS.SetActive(false);
+            MainmenuE.SetActive(true);
+        }
+        else
+        {
+            teamTextS.SetActive(true);
+            teamTextE.SetActive(false);
+            runesTextE.SetActive(false);
+            runesTextS.SetActive(true);
+            MainmenuS.SetActive(true);
+            MainmenuE.SetActive(false);
+        }
+    }
     
     
 
