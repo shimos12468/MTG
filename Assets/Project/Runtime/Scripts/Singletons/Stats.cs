@@ -61,6 +61,58 @@ public class Stats : MonoBehaviour
 
     }
 
+
+    public void BuyRune(Rune rune)
+    {
+        creature.skillPoints -= rune.priceForUnlock;
+        runesOptained.Add(rune);
+
+
+        for(int i = 0; i < creatureStats.Count; i++)
+        {
+            for(int j = 0; j < rune.stats.Length; j++)
+            {
+                if (creatureStats[i].name == rune.stats[j].stats[rune.level].name)
+                {
+                    stat stat = creatureStats[i];
+                    stat.Stat += rune.stats[j].stats[rune.level].Stat;
+                    stat.baseStat += rune.stats[j].stats[rune.level].baseStat;
+                    creatureStats[i] = stat;
+                } 
+            }
+        }
+    }
+    public void UpgradeRune(Rune rune)
+    {
+       creature.skillPoints -= rune.priceForUpgrade;
+
+
+        for (int i = 0; i < creatureStats.Count; i++)
+        {
+            for (int j = 0; j < rune.stats.Length; j++)
+            {
+                if (creatureStats[i].name == rune.stats[j].stats[rune.level].name)
+                {
+                    stat stat = creatureStats[i];
+                    stat.Stat += rune.stats[j].stats[rune.level].Stat;
+                    stat.baseStat += rune.stats[j].stats[rune.level].baseStat;
+                    creatureStats[i] = stat;
+                    
+                }
+            }
+        }
+
+        for(int i = 0; i < runesOptained.Count; i++)
+        {
+            if (runesOptained[i].name == rune.name)
+            {
+                runesOptained[i] = rune;
+            }
+        }
+
+      
+    }
+
     private void Update()
     {
 

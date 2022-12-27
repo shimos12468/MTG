@@ -25,6 +25,12 @@ public partial class utilities : MonoBehaviour
         public float baseStat;
     }
 
+    [System.Serializable]
+    public struct rune_Stats
+    {
+        public List<stat> stats;
+    }
+
     public interface Iboot
     {
         public void OnWalk();
@@ -84,13 +90,18 @@ public partial class utilities : MonoBehaviour
 
     [System.Serializable]
     public class Rune
+
     {
         public string name;
         public int level;
         public int priceForUnlock;
-        public int priceforupgrade;
+        public int priceForUpgrade;
+        public bool Unlocked;
+        public bool reachedMaximum;
+       
         public Sprite[] icons = new Sprite[3];
-        public stat[] stats; 
+        public rune_Stats[] stats; 
+
 
         public virtual void excute()
         {
@@ -98,10 +109,16 @@ public partial class utilities : MonoBehaviour
         }
 
     }
+    public enum RuneStates
+    {
+        UNLOCKED,
+        LOCKED,
+        REACHED_MAXIMUM_LEVEL ,
+        UPGRADE
+    }
 
-    
     [System.Serializable]
-    public class HealthRune : Rune
+    public class lifeEssence : Rune
     {
 
         public override void excute()
@@ -110,7 +127,17 @@ public partial class utilities : MonoBehaviour
         }
     }
     [System.Serializable]
-    public class DamageRune : Rune
+    public class eternalRage : Rune
+    {
+
+        public override void excute()
+        {
+            base.excute();
+        }
+    }
+
+    [System.Serializable]
+    public class cursedSwamp : Rune
     {
 
         public override void excute()

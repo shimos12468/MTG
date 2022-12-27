@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
+public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     private Vector2 mousePosition;
     private Vector2 startPositon;
@@ -65,7 +65,7 @@ public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
             if (selectableObject)
             {
                 transform.position = mousePosition - diffrance;
-                hitCollider = Physics2D.OverlapBox(new Vector2(Input.mousePosition.x, Input.mousePosition.y), new Vector2(200, 200), 90f);
+                hitCollider = Physics2D.OverlapBox(new Vector2(Input.mousePosition.x, Input.mousePosition.y), new Vector2(300, 300), 0f);
                 Debug.DrawLine(transform.position, transform.position * 1.5f);
 
                 if (hitCollider != null && !hitColliders.Contains(hitCollider) && hitCollider.gameObject.GetComponent<SelectedCreatureArea>())
@@ -75,7 +75,7 @@ public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
 
                 }
 
-                Debug.Log(hitCollider != null ? hitCollider.name : "nothing"); ;
+               
                 if (hitCollider)
                 {
                     hitCollider.GetComponent<SelectedCreatureArea>().didColideWithVreature(true);
@@ -92,7 +92,7 @@ public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
                 transform.position = mousePosition - diffrance;
                 if (backGround != null)
                 {
-                    Debug.Log("background");
+                    
                     float width = backGround.rect.width, height = backGround.rect.height;
                     if (rect.localPosition.y > height) rect.localPosition = new Vector3(rect.localPosition.x, height, 0);
 
@@ -117,6 +117,7 @@ public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
 
             if (hitCollider)
             {
+                if (hitCollider.GetComponent<SelectedCreatureArea>())
                 hitCollider.GetComponent<SelectedCreatureArea>().areaSelected(gameObject);
             }
 
@@ -137,8 +138,5 @@ public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDra
         }
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-
-    }
+   
 }

@@ -15,21 +15,16 @@ public class SelectedCreatureArea : MonoBehaviour
 
     private void Start()
     {
-        gameObject.AddComponent<BoxCollider2D>();
-       
-       
+        gameObject.AddComponent<BoxCollider2D>();  
     }
-    //private void Awake()
-    //{
-    //    gameObject.AddComponent<BoxCollider2D>();
-    //}
     public void didColideWithVreature(bool flag)
     {
         transform.GetChild(0).gameObject.SetActive(!flag);
         transform.GetChild(1).gameObject.SetActive(flag);
         transform.GetChild(2).gameObject.SetActive(flag);
     }
-    
+
+   
     public void areaSelected(GameObject creature)
     {
 
@@ -55,6 +50,6 @@ public class SelectedCreatureArea : MonoBehaviour
         }
         CharacterTeamScreen.selectedAcreature(selectedCreature, index);
 
-        Debug.Log("area selected");
+       
     }
 }
