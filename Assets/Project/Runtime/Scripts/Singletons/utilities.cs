@@ -12,6 +12,10 @@ public partial class utilities : MonoBehaviour
     }
 
 
+    public delegate void runeDelegate(Rune rune);
+    public runeDelegate runedelegate;
+
+
     public enum Raritys { Common, Uncommon, Rare, Epic, Legendary }
     public enum statType { Health, crit, regen, mana, stamina, defence, damage, speed }
     public enum Types { Fire, Dark, Light, Metal, Water, Nature, Wind, Poison, Melee, Bug, Rock, Electric }
@@ -98,14 +102,17 @@ public partial class utilities : MonoBehaviour
         public int priceForUpgrade;
         public bool Unlocked;
         public bool reachedMaximum;
+        public float cooldown { get; set; }
+        public bool OnCoolDown { get; set; }
+        public GameObject effect;
        
         public Sprite[] icons = new Sprite[3];
         public rune_Stats[] stats; 
 
 
-        public virtual void excute()
+        public virtual void excute(Rune R)
         {
-
+            
         }
 
     }
@@ -121,18 +128,18 @@ public partial class utilities : MonoBehaviour
     public class lifeEssence : Rune
     {
 
-        public override void excute()
+        public override void excute(Rune R)
         {
-            base.excute();
+            base.excute(R);
         }
     }
     [System.Serializable]
     public class eternalRage : Rune
     {
 
-        public override void excute()
+        public override void excute(Rune R)
         {
-            base.excute();
+            base.excute(R);
         }
     }
 
@@ -140,9 +147,9 @@ public partial class utilities : MonoBehaviour
     public class cursedSwamp : Rune
     {
 
-        public override void excute()
+        public override void excute(Rune R)
         {
-            base.excute();
+            base.excute(R);
         }
     }
 

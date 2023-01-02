@@ -40,6 +40,7 @@ public class CreatureMenuScreen : MonoBehaviour
         {
 
             creatureStats.UpgradeRune(runes[i]);
+            creatureStats.setUI();
             runes[i].level += 1;
             if (runes[i].level == 3)
             {
@@ -53,6 +54,7 @@ public class CreatureMenuScreen : MonoBehaviour
         if (points >= runes[i].priceForUnlock && !creatureStats.runesOptained.Contains(runes[i]))
         {
             creatureStats.BuyRune(runes[i]);
+            creatureStats.setUI();
             runes[i].level += 1;
             runes[i].Unlocked = true;
             changeRune(i);

@@ -17,6 +17,8 @@ public class creatureStatesPanel : MonoBehaviour
 
     private void diplayUI(Stats.creatureUIStats obj)
     {
+
+      
         health.text = obj.health;
         experiance.text = obj.experiance;
         magic.text = obj.magic; 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class OnPlayUIScreen : MonoBehaviour
 {
 
-    [SerializeField] GameObject creatureStats, characterStats;
+    [SerializeField] GameObject creatureStats, characterStats ,menu;
     private bool isFoucsed;
     void Start()
     {
@@ -26,6 +26,13 @@ public class OnPlayUIScreen : MonoBehaviour
         {
             creatureStats.SetActive(true);
             characterStats.SetActive(false);
+        }
+
+        if (menu.gameObject.activeSelf)
+        {
+            
+            creatureStats.SetActive(true);
+            characterStats.SetActive(true);
         }
     }
 }
