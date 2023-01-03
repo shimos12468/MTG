@@ -31,10 +31,11 @@ public class CreatureMenuScreen : MonoBehaviour
     }
 
 
+    
     public void RuneClicked(int i)
     {
 
-        Debug.Log("hello   " + i);
+       
         int points = creatureStats.creature.skillPoints;
         if (points >= runes[i].priceForUpgrade && creatureStats.runesOptained.Contains(runes[i]) && runes[i].level < 3)
         {
@@ -55,7 +56,7 @@ public class CreatureMenuScreen : MonoBehaviour
         {
             creatureStats.BuyRune(runes[i]);
             creatureStats.setUI();
-            runes[i].level += 1;
+            runes[i].Nextlevel +=runes[i].level+1;
             runes[i].Unlocked = true;
             changeRune(i);
 
@@ -69,17 +70,17 @@ public class CreatureMenuScreen : MonoBehaviour
         if (runes[i].level == 3)
         {
             runesgameObject[i].GetComponent<UIutilities>().SetupUI(runes[i].name,
-              runes[i].level.ToString()
+              runes[i].Nextlevel.ToString()
               , runes[i].priceForUpgrade.ToString()
-              , runes[i].icons[runes[i].level < 3 ? runes[i].level : 2]
+              , runes[i].icons[runes[i].level < 3 ? runes[i].Nextlevel : 2]
               , runes[i].stats, "Upgreade", RuneStates.REACHED_MAXIMUM_LEVEL);
         }
         else
         {
             runesgameObject[i].GetComponent<UIutilities>().SetupUI(runes[i].name,
-              runes[i].level.ToString()
+              runes[i].Nextlevel.ToString()
               , runes[i].priceForUpgrade.ToString()
-              , runes[i].icons[runes[i].level < 3 ? runes[i].level : 2]
+              , runes[i].icons[runes[i].level < 3 ? runes[i].Nextlevel : 2]
               , runes[i].stats, "Upgreade", RuneStates.UNLOCKED);
         }
     }

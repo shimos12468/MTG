@@ -98,17 +98,18 @@ public partial class utilities : MonoBehaviour
     {
         public string name;
         public int level;
+        public int Nextlevel;
         public int priceForUnlock;
         public int priceForUpgrade;
         public bool Unlocked;
         public bool reachedMaximum;
-        public float cooldown { get; set; }
+        public float cooldown = 3;
         public bool OnCoolDown { get; set; }
         public GameObject effect;
        
         public Sprite[] icons = new Sprite[3];
         public rune_Stats[] stats; 
-
+        
 
         public virtual void excute(Rune R)
         {

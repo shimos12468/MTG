@@ -53,6 +53,15 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CastRuneEffect"",
+                    ""type"": ""Button"",
+                    ""id"": ""bbb43a5d-5bdf-4523-8c01-9ca641d8490f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -86,6 +95,17 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""FoucsPlayer"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba77a6d1-d46c-43d5-81b3-706bfc9ac40f"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CastRuneEffect"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -155,6 +175,7 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
         m_GeneralInputs_Escape = m_GeneralInputs.FindAction("Escape", throwIfNotFound: true);
         m_GeneralInputs_SwapBetweenCreatures = m_GeneralInputs.FindAction("SwapBetweenCreatures", throwIfNotFound: true);
         m_GeneralInputs_FoucsPlayer = m_GeneralInputs.FindAction("FoucsPlayer", throwIfNotFound: true);
+        m_GeneralInputs_CastRuneEffect = m_GeneralInputs.FindAction("CastRuneEffect", throwIfNotFound: true);
         // Creature
         m_Creature = asset.FindActionMap("Creature", throwIfNotFound: true);
         m_Creature_Newaction = m_Creature.FindAction("New action", throwIfNotFound: true);
@@ -223,6 +244,7 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
     private readonly InputAction m_GeneralInputs_Escape;
     private readonly InputAction m_GeneralInputs_SwapBetweenCreatures;
     private readonly InputAction m_GeneralInputs_FoucsPlayer;
+    private readonly InputAction m_GeneralInputs_CastRuneEffect;
     public struct GeneralInputsActions
     {
         private @EnviromentSceneInput m_Wrapper;
@@ -230,6 +252,7 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
         public InputAction @Escape => m_Wrapper.m_GeneralInputs_Escape;
         public InputAction @SwapBetweenCreatures => m_Wrapper.m_GeneralInputs_SwapBetweenCreatures;
         public InputAction @FoucsPlayer => m_Wrapper.m_GeneralInputs_FoucsPlayer;
+        public InputAction @CastRuneEffect => m_Wrapper.m_GeneralInputs_CastRuneEffect;
         public InputActionMap Get() { return m_Wrapper.m_GeneralInputs; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -248,6 +271,9 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
                 @FoucsPlayer.started -= m_Wrapper.m_GeneralInputsActionsCallbackInterface.OnFoucsPlayer;
                 @FoucsPlayer.performed -= m_Wrapper.m_GeneralInputsActionsCallbackInterface.OnFoucsPlayer;
                 @FoucsPlayer.canceled -= m_Wrapper.m_GeneralInputsActionsCallbackInterface.OnFoucsPlayer;
+                @CastRuneEffect.started -= m_Wrapper.m_GeneralInputsActionsCallbackInterface.OnCastRuneEffect;
+                @CastRuneEffect.performed -= m_Wrapper.m_GeneralInputsActionsCallbackInterface.OnCastRuneEffect;
+                @CastRuneEffect.canceled -= m_Wrapper.m_GeneralInputsActionsCallbackInterface.OnCastRuneEffect;
             }
             m_Wrapper.m_GeneralInputsActionsCallbackInterface = instance;
             if (instance != null)
@@ -261,6 +287,9 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
                 @FoucsPlayer.started += instance.OnFoucsPlayer;
                 @FoucsPlayer.performed += instance.OnFoucsPlayer;
                 @FoucsPlayer.canceled += instance.OnFoucsPlayer;
+                @CastRuneEffect.started += instance.OnCastRuneEffect;
+                @CastRuneEffect.performed += instance.OnCastRuneEffect;
+                @CastRuneEffect.canceled += instance.OnCastRuneEffect;
             }
         }
     }
@@ -336,6 +365,7 @@ public partial class @EnviromentSceneInput : IInputActionCollection2, IDisposabl
         void OnEscape(InputAction.CallbackContext context);
         void OnSwapBetweenCreatures(InputAction.CallbackContext context);
         void OnFoucsPlayer(InputAction.CallbackContext context);
+        void OnCastRuneEffect(InputAction.CallbackContext context);
     }
     public interface ICreatureActions
     {

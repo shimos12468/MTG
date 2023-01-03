@@ -78,11 +78,16 @@ public class DragImage : MonoBehaviour, IDragHandler, IEndDragHandler
                
                 if (hitCollider)
                 {
-                    hitCollider.GetComponent<SelectedCreatureArea>().didColideWithVreature(true);
+                    if (hitCollider.GetComponent<SelectedCreatureArea>())
+                    {
+                        hitCollider.GetComponent<SelectedCreatureArea>().didColideWithVreature(true);
+                    }
+                    
 
                     for (int i = 0; i < index; i++)
                     {
-                        if (hitCollider.GetInstanceID() != hitColliders[i].GetInstanceID()) hitColliders[i].GetComponent<SelectedCreatureArea>().didColideWithVreature(false);
+                        if (hitCollider.GetInstanceID() != hitColliders[i].GetInstanceID())
+                            hitColliders[i].GetComponent<SelectedCreatureArea>().didColideWithVreature(false);
                     }
                 }
             }

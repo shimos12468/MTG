@@ -65,7 +65,7 @@ public class inventory : MonoBehaviour
                            // you buy here you shoudl compare the points with price
                             if (hitColliders[i].GetComponent<BaseItem>())
                             {
-
+                                gameObject.GetComponent<AudioSource>().Play();
                                 items.Add(hitColliders[i].GetComponent<BaseItem>());
                                 Debug.Log(hitColliders[i]+"  "+ i);
                                 characterInventory.GetComponent<characterInventoryScreen>().AddItem(hitColliders[i].GetComponent<BaseItem>());
