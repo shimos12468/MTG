@@ -1,11 +1,5 @@
-
 using System;
-using System.Collections;
-using System.Collections.Generic;
-
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements;
 
 public class movment : MonoBehaviour
 {
@@ -30,8 +24,8 @@ public class movment : MonoBehaviour
 
     private float rollInput;
     public float rollSpeed=90f ,rollAcceleration =3.5f;
-
-    Vector2 lookInput ,screenCenter ,mouseDistance;
+    public float sensitivity = 0.5f;
+    Vector2 lookInput ,screenCenter ,mouseDistance ,turn;
 
 
   
@@ -45,8 +39,7 @@ public class movment : MonoBehaviour
 
     private void Start()
     {
-        screenCenter.x = Screen.width * .5f;
-        screenCenter.y = Screen.height * .5f;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
@@ -55,18 +48,33 @@ public class movment : MonoBehaviour
         lookInput.x = Input.mousePosition.x;
         lookInput.y = Input.mousePosition.y;
 
-        mouseDistance.x = (lookInput.x - screenCenter.x) / screenCenter.y;
-        mouseDistance.y = (lookInput.y - screenCenter.y) / screenCenter.y;
-        mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
+       
 
         rollInput = Mathf.Lerp(rollInput, Input.GetAxisRaw("Roll"), rollAcceleration * Time.deltaTime);
 
 
-        transform.Rotate(-mouseDistance.x*lookRateSpeed*Time.deltaTime, mouseDistance.x* lookRateSpeed * Time.deltaTime, rollSpeed*rollInput*Time.deltaTime, Space.Self);
+       
 
         activeForwardSpeed = Mathf.Lerp(activeForwardSpeed ,Input.GetAxisRaw("Vertical") * forwardSpeed,forwardAcceleration*Time.deltaTime);
         activestrafSpeed = Mathf.Lerp(activestrafSpeed,Input.GetAxisRaw("Horizontal") * strafSpeed ,strafeAcceleration*Time.deltaTime);
         activeHoverSpeed = Mathf.Lerp(activeHoverSpeed,Input.GetAxisRaw("Hover") * hoverSpeed ,hoverAcceleration*Time.deltaTime);
+
+
+
+
+
+
+        if (Input.GetKey(KeyCode.W) ||Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.LeftControl))
+        {
+            turn.x += Input.GetAxis("Mouse X") * sensitivity;
+            turn.y += Input.GetAxis("Mouse Y") * sensitivity;
+            turn.y = Mathf.Clamp(turn.y, -60f ,60f);
+            transform.localRotation = Quaternion.Euler(-turn.y, turn.x, transform.localRotation.eulerAngles.z);
+            transform.Rotate(0f, 0f, rollSpeed * rollInput * Time.deltaTime, Space.Self);
+           
+        }
+
+       
 
         transform.position += transform.forward*activeForwardSpeed*Time.deltaTime;
         transform.position += transform.right * activestrafSpeed * Time.deltaTime;
