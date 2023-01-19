@@ -1,123 +1,82 @@
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.UIElements;
+
 public class movment : MonoBehaviour
 {
 
 
-    public GameObject model;
-
-    [SerializeField, Range(1f, 50f)]
-    float speed = 10;
     [SerializeField, Range(1f, 100f)]
-    float acc = 10;
+    float strafSpeed = 7.5f;
+    [SerializeField, Range(1f, 100f)]
+    float forwardSpeed = 25f;
+    [SerializeField, Range(1f, 100f)]
+    float hoverSpeed = 5f;
+    
+    private float activeForwardSpeed;   
+    private float activestrafSpeed;
+    private float activeHoverSpeed;
 
-    [SerializeField, Range(1f, 100)]
-    float maxSpeed = .1f;
+    private float forwardAcceleration = 2.5f;
+    private float strafeAcceleration = 2f;
+    private float hoverAcceleration = 2f;
 
-    [SerializeField, Range(1f, 10)]
-    float Multiplayer = 2f;
+    public float lookRateSpeed = 90f;
 
-    [SerializeField, Range(10f, 50f)]
-    float takingOffSpeed = 2f;
+    private float rollInput;
+    public float rollSpeed=90f ,rollAcceleration =3.5f;
 
-    [SerializeField, Range(10f, 50f)]
-    float HeightLimit = 20f;
+    Vector2 lookInput ,screenCenter ,mouseDistance;
 
-    [SerializeField, Range(10f, 50f)]
-    float FlayingAcceleration = 20f;
-    Vector2 turn;
 
-    [SerializeField, Range(10f, 1000f)]
-    float rotationSpeed = 200;
+  
     public enum MovmentStates
     {
         OnGround ,
         Flaying ,
-        TakeOff ,
-        Landing
-    }
-    Vector3 v;
-    void OnValidate()
-    {
-       
-    }
-    void Start()
-    {
-        v = transform.position;
+        Aiming
     }
 
-    
+
+    private void Start()
+    {
+        screenCenter.x = Screen.width * .5f;
+        screenCenter.y = Screen.height * .5f;
+    }
+
     void Update()
     {
-        turn.x += Input.GetAxis("Mouse X");
-        transform.rotation = Quaternion.Euler(0, turn.x, 0f);
 
-        if (!Input.anyKey)
-        {
-            speed = Mathf.MoveTowards(speed, 0, acc * Multiplayer * Time.deltaTime);
-        }
-        else
-        {
-            speed = Mathf.MoveTowards(speed, maxSpeed, acc * Time.deltaTime);
-        }
+        lookInput.x = Input.mousePosition.x;
+        lookInput.y = Input.mousePosition.y;
+
+        mouseDistance.x = (lookInput.x - screenCenter.x) / screenCenter.y;
+        mouseDistance.y = (lookInput.y - screenCenter.y) / screenCenter.y;
+        mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
+
+        rollInput = Mathf.Lerp(rollInput, Input.GetAxisRaw("Roll"), rollAcceleration * Time.deltaTime);
 
 
-        if (Input.GetKey(KeyCode.W))
-        {
+        transform.Rotate(-mouseDistance.x*lookRateSpeed*Time.deltaTime, mouseDistance.x* lookRateSpeed * Time.deltaTime, rollSpeed*rollInput*Time.deltaTime, Space.Self);
 
-            Vector3 b = transform.localPosition;
-            b.y = 0;
-            b.x = 0;
-            b.z = 1;
-            transform.Translate((b*  speed * Time.deltaTime));
-        }
+        activeForwardSpeed = Mathf.Lerp(activeForwardSpeed ,Input.GetAxisRaw("Vertical") * forwardSpeed,forwardAcceleration*Time.deltaTime);
+        activestrafSpeed = Mathf.Lerp(activestrafSpeed,Input.GetAxisRaw("Horizontal") * strafSpeed ,strafeAcceleration*Time.deltaTime);
+        activeHoverSpeed = Mathf.Lerp(activeHoverSpeed,Input.GetAxisRaw("Hover") * hoverSpeed ,hoverAcceleration*Time.deltaTime);
 
-        if (speed >= takingOffSpeed&&transform.position.y<HeightLimit)
-        {
-           
-            v.y= Mathf.MoveTowards(v.y, transform.position.y + HeightLimit, FlayingAcceleration * Time.deltaTime);
-            transform.position =new Vector3(transform.position.x ,v.y ,transform.position.z);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            
-            Vector3 b = transform.localPosition;
-            b.y = 0;
-            b.x = 1;
-            b.z = 0;
-            transform.Translate(b * speed * Time.deltaTime);
-            Quaternion wantedRotation = Quaternion.Euler(0, 0, -30);
-            model.transform.localRotation = Quaternion.RotateTowards(model.transform.localRotation, wantedRotation, Time.deltaTime * rotationSpeed);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            Vector3 b = transform.localPosition;
-            b.y = 0;
-            b.x = 1;
-            b.z = 0;
-            transform.Translate(-b * speed * Time.deltaTime);
-            Quaternion wantedRotation = Quaternion.Euler(0, 0, 30);
-            model.transform.localRotation = Quaternion.RotateTowards(model.transform.localRotation, wantedRotation, Time.deltaTime * rotationSpeed);
-        }
-
-
-
-        if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
-        {
-            model.transform.rotation = Quaternion.RotateTowards(model.transform.rotation,transform.rotation, Time.deltaTime * rotationSpeed);
-        }
-
-
-
+        transform.position += transform.forward*activeForwardSpeed*Time.deltaTime;
+        transform.position += transform.right * activestrafSpeed * Time.deltaTime;
+        transform.position += transform.up * activeHoverSpeed * Time.deltaTime;
 
 
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
+ 
+
 }
+
+
